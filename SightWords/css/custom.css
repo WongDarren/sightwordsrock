@@ -1,0 +1,55 @@
+/*************** CUSTOM FONTS ***************/
+
+@font-face {
+  font-family: 'Century Gothic Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Regular'), url('fonts/GOTHIC.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Century Gothic Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Italic'), url('fonts/GOTHICI.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Century Gothic Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Bold'), url('fonts/GOTHICB.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Century Gothic Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Bold Italic'), url('fonts/GOTHICBI.woff') format('woff');
+}
+
+/*************** CUSTOM STYLES ***************/
+html, body{
+ height: 100%;
+ font-family: 'Century Gothic Regular'
+}
+
+#cover {
+  background: #222;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#cover h1 {
+  font-size: 70px;
+}
+
+#cover-caption {
+  width: 100%;
+}
