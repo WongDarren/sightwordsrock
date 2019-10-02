@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SightWordsProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData SightWordsProject</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -15,9 +15,11 @@
               crossorigin="anonymous"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
     </environment>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <!--<link rel="stylesheet" href="~/css/site.css" />-->
+    <link rel="stylesheet" href="~/css/custom.css" />
 </head>
 <body>
+    <!--
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -39,19 +41,21 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
+    -->
+    <!--<div class="container">-->
+    
+    <partial name="_CookieConsentPartial" />
+    <main role="main">
+        @RenderBody()
+    </main>
+    
+<!--
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2019 - SightWordsProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-
+-->
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
