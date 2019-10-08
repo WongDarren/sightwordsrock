@@ -26,4 +26,16 @@ namespace SightWordsProject.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
+
+    public class StudentController : Controller
+    {
+        public IActionResult StudentLogin()
+        {
+            return View();
+        }
+        public IActionResult StudentStages()
+        {
+            return View();
+        }
+    }
 }

@@ -12083,11 +12083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/darrenwong/Desktop/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+      "projectUniqueName": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
       "projectName": "SightWordsProject",
-      "projectPath": "/Users/darrenwong/Desktop/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+      "projectPath": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
       "packagesPath": "/Users/darrenwong/.nuget/packages/",
-      "outputPath": "/Users/darrenwong/Desktop/seniorprojectfall2019team9/SightWordsProject/obj/",
+      "outputPath": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
