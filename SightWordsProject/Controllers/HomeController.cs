@@ -27,15 +27,5 @@ namespace SightWordsProject.Controllers
         }
     }
 
-    public class StudentController : Controller
-    {
-        public IActionResult StudentLogin()
-        {
-            return View();
-        }
-        public IActionResult StudentStages()
-        {
-            return View();
-        }
-    }
+
 }

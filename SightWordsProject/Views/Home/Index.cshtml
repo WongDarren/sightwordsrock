@@ -6,17 +6,29 @@
         <div id="container" class="container">
             <div class="row text-white">
                 <div class="col-md-6 offset-md-3 text-center">
-                    <h1>Welcome</h1>
+                    <h1>Welcome to Sight Words Rock</h1>
                     <div class="justify-content-center">
                         <a>
-                            <button type="button" class="btn btn-primary btn-lg">Teachers</button>
+                            <button type="button" id="Teacher" class="btn btn-primary btn-lg">Teachers</button>
                         </a>
                         <a asp-area="" asp-controller="Student" asp-action="StudentLogin">
-                            <button type="button" class="btn btn-primary btn-lg">Students</button>
+                            <button type="button" id="Student" class="btn btn-primary btn-lg">Students</button>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $('#Student').click(function (){
+            $.ajax({
+                method: "POST",
+                url: "../Student/StudentLogin",
+                data: data,
+                success: function (data){
+                    window.location.replace("/Student/StudentLogin")
+                }
+            })
+        })
+    </script>
 </section>

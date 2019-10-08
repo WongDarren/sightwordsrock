@@ -1,29 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {}
+    "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj": {}
   },
   "projects": {
-    "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {
+    "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+        "projectUniqueName": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
         "projectName": "SightWordsProject",
-        "projectPath": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
-        "packagesPath": "/Users/darrenwong/.nuget/packages/",
-        "outputPath": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/obj/",
+        "projectPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
+        "packagesPath": "C:\\Users\\mullanet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/darrenwong/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mullanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://lvvwd.pkgs.visualstudio.com/_packaging/ITAD/nuget/v3/index.json": {},
+          "https://lvvwd.pkgs.visualstudio.com/_packaging/ITAD_ThirdParty/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
