@@ -122,3 +122,4 @@ c:\Users\mullanet\Documents\CS472\seniorprojectfall2019team9\SightWordsProject\o
 c:\Users\mullanet\Documents\CS472\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\SightWordsProject.dll
 c:\Users\mullanet\Documents\CS472\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\SightWordsProject.pdb
 C:\Users\mullanet\Documents\CS472\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\SightWordsProject.csproj.CopyComplete
+c:\Users\mullanet\Documents\CS472\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\TeacherLogin.g.cshtml.cs
