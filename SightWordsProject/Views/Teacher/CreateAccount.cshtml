@@ -1,5 +1,7 @@
+
+
 @{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "User Registration";
 }
 
 <section id="cover">
@@ -9,7 +11,8 @@
         <div class="col-md-6 offset-md-3 text-center">
           <h1 style="font-size: 30px;">Sight Words Learning Center</h1>
           <h3>Create Account</h3><br>
-          <form id="createAccountForm" class="form-container needs-validation" novalidate>
+          <form method="post" id="createAccountForm" class="form-container needs-validation" novalidate>
+            <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-row">
                 <div class="col">
                     <input class="form-control form-control-lg" type="text" placeholder="first name" name="fname" required>

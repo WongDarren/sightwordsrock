@@ -7499,6 +7499,7 @@
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -12036,6 +12037,7 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12078,60 +12080,27 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\mullanet\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
-=======
-<<<<<<< HEAD
-    "/Users/Nathan/.nuget/packages/": {},
-=======
-    "/Users/movleafen/.nuget/packages/": {},
->>>>>>> 45a6346d1018eb555bc51e0856223bc6583b99fd
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
->>>>>>> c012ad5faebcfbd15c80bc34872747c1b36832c6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
       "projectName": "SightWordsProject",
       "projectPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
       "packagesPath": "C:\\Users\\mullanet\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\obj\\",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
-      "projectName": "SightWordsProject",
-      "projectPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
-      "packagesPath": "/Users/Nathan/.nuget/packages/",
-      "outputPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/",
-=======
-      "projectUniqueName": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
-      "projectName": "SightWordsProject",
-      "projectPath": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
-      "packagesPath": "/Users/movleafen/.nuget/packages/",
-      "outputPath": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/",
->>>>>>> 45a6346d1018eb555bc51e0856223bc6583b99fd
->>>>>>> c012ad5faebcfbd15c80bc34872747c1b36832c6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\mullanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-=======
-<<<<<<< HEAD
-        "/Users/Nathan/.nuget/NuGet/NuGet.Config"
-=======
-        "/Users/movleafen/.nuget/NuGet/NuGet.Config"
->>>>>>> 45a6346d1018eb555bc51e0856223bc6583b99fd
->>>>>>> c012ad5faebcfbd15c80bc34872747c1b36832c6
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -12185,5 +12154,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\obj\\SightWordsProject.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
