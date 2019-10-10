@@ -12,9 +12,9 @@
           <h2>Welcome, Teacher!</h2>
           <h3>Please sign in:</h3><br>
           <form>
-            <input class="form-control form-control-lg" type="text" placeholder="username" name="uname" required>
+            <input class="form-control form-control-lg" type="email" placeholder="email" name="email" required>
             <br>
-            <input class="form-control form-control-lg" type="text" placeholder="password" name="psw" required>
+            <input class="form-control form-control-lg" type="password" placeholder="password" name="psw" required>
             <br>
             <button type="button" class="btn btn-primary btn-lg">Login</button>
             <br>
@@ -22,7 +22,9 @@
             <span class="psw"><a href="#">Forgot password?</a></span>
             <br>
             <br>
-            <input type="button" class="btn btn-primary btn-lg" value="Create New Account"/>
+            <a asp-controller="Teacher" asp-action="CreateAccount">
+              <button type="button" class="btn btn-primary btn-lg">Create Account</button>
+            </a>
           </form>
         </div>  
       </div>
