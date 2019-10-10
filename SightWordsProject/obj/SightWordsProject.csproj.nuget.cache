@@ -1,5 +1,9 @@
 {
   "version": 1,
+<<<<<<< HEAD
   "dgSpecHash": "StGbQgmTdIuUObku8E/n9HwOpDrVV7fDixWyf83Hz+IDjYW1V+69vhEQriCk/Oswl9GnUegHn3fAZSkKsWT6PQ==",
+=======
+  "dgSpecHash": "yapXL2o7OM7DWrVYhSpxH6YQm/LztWOInHTo9R5g9n+hNmnUDNQmT/nRoJ5oGuZQE2zKVheWGeYD8RYML+lHEA==",
+>>>>>>> dashboards
   "success": true
 }

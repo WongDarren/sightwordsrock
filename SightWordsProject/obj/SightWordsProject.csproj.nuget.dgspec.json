@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj": {}
   },
   "projects": {
@@ -12,15 +13,32 @@
         "projectPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
         "packagesPath": "C:\\Users\\mullanet\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\obj\\",
+=======
+    "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {}
+  },
+  "projects": {
+    "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+        "projectName": "SightWordsProject",
+        "projectPath": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+        "packagesPath": "/Users/darrenwong/.nuget/packages/",
+        "outputPath": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/",
+>>>>>>> dashboards
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mullanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+=======
+          "/Users/darrenwong/.nuget/NuGet/NuGet.Config"
+>>>>>>> dashboards
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

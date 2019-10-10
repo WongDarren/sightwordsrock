@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/darrenwong/Desktop/repos/niorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+  "FilePath": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -10,7 +10,7 @@
     ]
   },
   "ProjectWorkspaceState": null,
-  "RootNamespace": "SightWordsProject",
+  "RootNamespace": null,
   "Documents": [],
   "SerializationFormat": "0.2"
 }
