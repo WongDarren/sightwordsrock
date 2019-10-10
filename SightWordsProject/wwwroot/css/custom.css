@@ -57,3 +57,7 @@ main {
 #cover-caption {
   width: 100%;
 }
+
+.modules_row {
+  margin-bottom: 20px;
+}

@@ -14,11 +14,11 @@ namespace SightWordsProject.Controllers
         {
             return View("Views/Student/StudentLogin.cshtml");
         }
-        public IActionResult StudentDashboard()
+        public IActionResult Dashboard()
         {
-            return View();
+            return View("Views/Student/StudentDashboard.cshtml");
         }
-        public IActionResult StudentStages()
+        public IActionResult Stages()
         {
             return View();
         }
