@@ -1,7 +1,23 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj": {}
+=======
+
+    "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj": {}
+  },
+  "projects": {
+    "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
+        "projectName": "SightWordsProject",
+        "projectPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
+        "packagesPath": "/Users/Nathan/.nuget/packages/",
+        "outputPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/",
+    "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {}
+>>>>>>> c012ad5faebcfbd15c80bc34872747c1b36832c6
   },
   "projects": {
     "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj": {
@@ -18,9 +34,14 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mullanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+=======
+          "/Users/Nathan/.nuget/NuGet/NuGet.Config",
+          "/Users/movleafen/.nuget/NuGet/NuGet.Config"
+>>>>>>> c012ad5faebcfbd15c80bc34872747c1b36832c6
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

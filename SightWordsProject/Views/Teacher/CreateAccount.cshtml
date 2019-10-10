@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="cover">
+  <div id="cover-caption">
+    <div id="container" class="container">
+      <div class="row text-white">
+        <div class="col-md-6 offset-md-3 text-center">
+          <h1 style="font-size: 30px;">Sight Words Learning Center</h1>
+          <h3>Create Account</h3><br>
+          <form id="createAccountForm" class="form-container needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col">
+                    <input class="form-control form-control-lg" type="text" placeholder="first name" name="fname" required>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-lg" type="text" placeholder="last name" name="lname" required>
+                </div>
+            </div>
+            <br>
+            <input class="form-control form-control-lg" type="text" placeholder="school" name="schoolName">
+            <br>
+            <input class="form-control form-control-lg" type="text" placeholder="email" name="email" required>
+            <br>
+            <input class="form-control form-control-lg" type="password" placeholder="password" name="psw" required>
+            <br>
+            <input class="form-control form-control-lg" type="password" placeholder="confirm password" name="psw" required>
+            <br>
+            <br>
+            <a asp-controller="" asp-action="">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </a>
+          </form>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  var form = document.querySelector('.needs-validation');
+
+  form.addEventListener('submit', function(event){
+      if (form.checkValidity()===false){
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+  })
+</script>

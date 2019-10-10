@@ -14,5 +14,10 @@ namespace SightWordsProject.Controllers
         {
             return View("Views/Teacher/TeacherLogin.cshtml");
         }
+
+        public IActionResult CreateAccount()
+        {
+            return View("Views/Teacher/CreateAccount.cshtml");
+        }
     }
 }
