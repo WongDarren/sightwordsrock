@@ -20,11 +20,29 @@ namespace SightWordsProject.Controllers
             this.signInManager = signInManager;
             this.userManager = userManager;
         }
-        public IActionResult Login()
+        [HttpGet]
+        public IActionResult TeacherLogin()
         {
-            return View("Views/Teacher/TeacherLogin.cshtml");
+            return View();
         }
 
+        [HttpPost]
+        public async Task<IActionResult> TeacherLogin(TeacherLoginVM model)
+        {
+            if(ModelState.IsValid)
+            {
+                var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+
+                if(result.Succeeded)
+                {
+                    return RedirectToAction("TeacherDashboard", "Teacher");
+                }
+                
+                ModelState.AddModelError(string.Empty, "invalid login attempt");
+            }
+            
+            return View(model);
+        }
         [HttpGet]
         public IActionResult CreateAccount()
         {
@@ -64,5 +82,6 @@ namespace SightWordsProject.Controllers
         {
             return View();
         }
+
     }
 }

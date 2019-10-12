@@ -1,5 +1,7 @@
+@model TeacherLoginVM
+
 @{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Teacher Login";
 }
 
 <section id="cover">
@@ -9,12 +11,25 @@
         <div class="col-md-6 offset-md-3 text-center">
           <h2>Welcome, Teacher!</h2>
           <h3>Please sign in:</h3><br>
-          <form>
-            <input class="form-control form-control-lg" type="email" placeholder="email" name="email" required>
-            <br>
-            <input class="form-control form-control-lg" type="password" placeholder="password" name="psw" required>
-            <br>
-            <button type="button" class="btn btn-primary btn-lg">Login</button>
+          <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+              <input asp-for="Email" class="form-control form-control-lg" placeholder="email">
+              <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <input asp-for="Password" class="form-control form-control-lg" placeholder="password">
+              <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label asp-for="RememberMe">
+                  <input asp-for="RememberMe"/>
+                  @Html.DisplayNameFor(m => m.RememberMe)
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Login</button>
             <br>
             <br>
             <span class="psw"><a href="#">Forgot password?</a></span>
