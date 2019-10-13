@@ -20,7 +20,7 @@ namespace SightWordsProject.Controllers
         }
         public IActionResult Stages()
         {
-            return View();
+            return View("Views/Student/StudentStages.cshtml");
         }
 
     }
