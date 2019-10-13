@@ -29,16 +29,21 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+            <a role="button" class="btn btn-primary btn-lg">
+              Login
+            </a> 
             <br>
             <br>
             <span class="psw"><a href="#">Forgot password?</a></span>
             <br>
             <br>
-            <a asp-controller="Teacher" asp-action="CreateAccount">
-              <button type="button" class="btn btn-primary btn-lg">Create Account</button>
-            </a>
+            <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Teacher" asp-action="CreateAccount">
+              Create Account
+            </a> 
           </form>
+          <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Teacher" asp-action="TeacherDashboard">
+              Dashboard
+          </a> 
         </div>  
       </div>
     </div>

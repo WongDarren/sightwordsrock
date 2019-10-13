@@ -14,10 +14,12 @@
             <br>
             <input class="form-control form-control-lg" type="text" placeholder="student id">
             <br>
-            <button type="button" class="btn btn-primary btn-lg">Login</button>
-              <a asp-area="" asp-controller="Student" asp-action="Dashboard">
-            <button type="button" id="Student" class="btn btn-primary btn-lg">Dashboard</button>
-          </a> 
+            <a role="button" class="btn btn-primary btn-lg">
+              Login
+            </a>
+            <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Student" asp-action="StudentDashboard">
+              Dashboard
+            </a>  
           </form>
         </div>  
       </div>
