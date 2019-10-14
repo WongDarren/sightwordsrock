@@ -83,5 +83,10 @@ namespace SightWordsProject.Controllers
             return View();
         }
 
+        public IActionResult StudentStats()
+        {
+            return View();
+        }
+
     }
 }
