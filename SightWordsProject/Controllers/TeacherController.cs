@@ -88,5 +88,9 @@ namespace SightWordsProject.Controllers
             return View();
         }
 
+        public IActionResult ManageAccount()
+        {
+            return View();
+        }
     }
 }
