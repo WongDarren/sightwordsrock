@@ -33,6 +33,10 @@ namespace SightWordsProject.ViewModels
 
          public string StudentCode { get; set; }
 
+        [Display(Name ="Remember Me")]
+        public bool RememberMe { get; set; }
+
+
 
 
       

@@ -2961,6 +2961,11 @@
   "RootNamespace": "SightWordsProject",
   "Documents": [
     {
+      "FilePath": "Views/Teacher/AddStudents.cshtml",
+      "TargetPath": "Views/Teacher/AddStudents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Teacher/TeacherLogin.cshtml",
       "TargetPath": "Views/Teacher/TeacherLogin.cshtml",
       "FileKind": "mvc"
