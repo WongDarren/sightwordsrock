@@ -32,13 +32,6 @@ namespace SightWordsProject.ViewModels
          public string ConfirmPassword { get; set;}
 
          public string StudentCode { get; set; }
-
-        [Display(Name ="Remember Me")]
-        public bool RememberMe { get; set; }
-
-
-
-
       
     }
 }

@@ -37,7 +37,7 @@ namespace SightWordsProject.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> TeacherLogin(CreateAccountVM model)
+        public async Task<IActionResult> TeacherLogin(TeacherLoginVM model)
         {
             if(ModelState.IsValid)
             {
@@ -52,11 +52,11 @@ namespace SightWordsProject.Controllers
                 ModelState.AddModelError(string.Empty, "invalid login attempt");
             }
 
-            using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
-            {
-                ApplicationUser user = context.TeacherLogin.Single(x => x.UserName == model.Email);
-                model.StudentCode = user.StudentCode;
-            }
+            // using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
+            // {
+            //     ApplicationUser user = context.TeacherLogin.Single(x => x.UserName == model.Email);
+            //     model.StudentCode = user.StudentCode;
+            // }
             return View("TeacherDashboard",model);
         }
         [HttpGet]
