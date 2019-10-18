@@ -20,6 +20,7 @@ namespace SightWordsProject.Controllers
         private string connectionString;
         DbContextOptionsBuilder<AppDbContext> optionsBuilder;
 
+
         public TeacherController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
         {
             configuration = config;
