@@ -54,6 +54,7 @@ namespace SightWordsProject.Controllers
         {
             if(ModelState.IsValid)
             {
+                model.StudentCode = GenerateStudentCode();
                 var user = new ApplicationUser 
                 {
                     FirstName = model.FirstName,
@@ -61,6 +62,7 @@ namespace SightWordsProject.Controllers
                     School = model.School,
                     UserName = model.Email, 
                     Email = model.Email, 
+                    StudentCode = model.StudentCode,
                 };
                 var result = await userManager.CreateAsync(user,model.Password);
 
@@ -75,14 +77,13 @@ namespace SightWordsProject.Controllers
                 }
             }
             
-            return View(model);
+            return View("TeacherDashboard",model);
         }
 
         public IActionResult TeacherDashboard()
         {
             return View();
         }
-
         public IActionResult StudentStats()
         {
             return View();
@@ -91,6 +92,20 @@ namespace SightWordsProject.Controllers
         public IActionResult ManageAccount()
         {
             return View();
+        }
+
+        public string GenerateStudentCode()
+        {
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var stringChars = new char[8];
+            var random = new Random();
+
+            for (int i = 0; i < stringChars.Length; i++)
+            {
+                stringChars[i] = chars[random.Next(chars.Length)];
+            }
+            var finalString = new String(stringChars);
+            return(finalString);
         }
     }
 }
