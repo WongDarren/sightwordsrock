@@ -3,45 +3,64 @@
 <section id="cover">
   <div id="cover-caption">
     <div id="container" class="container">
-      <div class="row text-white">
-        <div class="col-md-6 offset-md-3 text-center">
-          <h1 style="font-size: 30px;">Sight Words Learning Center</h1>
-          <h3>Create Account</h3>
-
-          <div class="row">
-            <div class="col-md-12">
-              <form method="post" class="form-container">
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                  <input asp-for="FirstName" class="form-control form-control-lg" placeholder="first name">
-                  <span asp-validation-for="FirstName" class="text-danger"></span>
+      <div class="col-md-6 offset-md-3 text-center">
+        <span class="text-white">
+          <h3>Sight Words Learning Center</h1>
+          <h3>Create an Account</h3>
+        </span>
+        <br/>
+        
+        <div class="col-md-12">
+          <form method="post" class="form-container">
+            <div asp-validation-summary="All" class="text-danger"></div>
+              <div style="text-align:right;">
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label form-control-label">First name</label>
+                  <div class="col-sm-8">
+                    <input asp-for="FirstName" class="form-control form-control-lg" placeholder="First name">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input asp-for="LastName" class="form-control form-control-lg" placeholder="last name">
-                  <span asp-validation-for="LastName" class="text-danger"></span>
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label form-control-label">Last name</label>
+                  <div class="col-sm-8">
+                    <input asp-for="LastName" class="form-control form-control-lg" placeholder="Last name">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input asp-for="School" class="form-control form-control-lg" placeholder="school">
-                  <!-- <span asp-validation-for="FirstName" class="text-danger"></span> -->
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label form-control-label">School</label>
+                  <div class="col-sm-8">
+                    <input asp-for="School" class="form-control form-control-lg" placeholder="School">
+                    <!-- <span asp-validation-for="FirstName" class="text-danger"></span> -->
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input asp-for="Email" class="form-control form-control-lg" placeholder="email">
-                  <span asp-validation-for="Email" class="text-danger"></span>
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label form-control-label">Email</label>
+                  <div class="col-sm-8">
+                    <input asp-for="Email" class="form-control form-control-lg" placeholder="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input asp-for="Password" class="form-control form-control-lg" placeholder="password">
-                  <span asp-validation-for="Password" class="text-danger"></span>
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label form-control-label">Password</label>
+                  <div class="col-sm-8">
+                    <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input asp-for="ConfirmPassword" class="form-control form-control-lg" placeholder="confirm password">
-                  <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label form-control-label">Confirm Password</label>
+                  <div class="col-sm-8">
+                    <input asp-for="ConfirmPassword" class="form-control form-control-lg" placeholder="Confirm Password">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
                 </div>
-                <a asp-controller="" asp-action="">
-                  <button type="submit" class="btn btn-primary btn-lg">Register</button>
-                </a>
-              </form>
-            </div>
-          </div>
+              </div>
+              <a asp-controller="" asp-action="">
+                <button style="text-align: center;" type="submit" class="btn btn-primary btn-lg">Register</button>
+              </a>
+          </form>
         </div>
       </div>
     </div>
