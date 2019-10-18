@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using SightWordsProject.Models;
 using SightWordsProject.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace SightWordsProject.Controllers
 {
@@ -14,9 +16,17 @@ namespace SightWordsProject.Controllers
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly IConfiguration configuration;
+        private string connectionString;
+        DbContextOptionsBuilder<AppDbContext> optionsBuilder;
 
-        public TeacherController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+
+        public TeacherController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
         {
+            configuration = config;
+            optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
+            connectionString = configuration.GetConnectionString("DefaultConnection");
+            optionsBuilder.UseSqlServer(connectionString);
             this.signInManager = signInManager;
             this.userManager = userManager;
         }
@@ -30,6 +40,7 @@ namespace SightWordsProject.Controllers
         {
             if(ModelState.IsValid)
             {
+
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
 
                 if(result.Succeeded)
@@ -39,8 +50,13 @@ namespace SightWordsProject.Controllers
                 
                 ModelState.AddModelError(string.Empty, "invalid login attempt");
             }
-            
-            return View(model);
+
+            // using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
+            // {
+            //     ApplicationUser user = context.TeacherLogin.Single(x => x.UserName == model.Email);
+            //     model.StudentCode = user.StudentCode;
+            // }
+            return View("TeacherDashboard",model);
         }
         [HttpGet]
         public IActionResult CreateAccount()

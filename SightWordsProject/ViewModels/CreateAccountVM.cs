@@ -32,9 +32,6 @@ namespace SightWordsProject.ViewModels
          public string ConfirmPassword { get; set;}
 
          public string StudentCode { get; set; }
-
-
-
       
     }
 }
