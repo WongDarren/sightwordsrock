@@ -56,7 +56,7 @@ namespace SightWordsProject.Controllers
             //     ApplicationUser user = context.TeacherLogin.Single(x => x.UserName == model.Email);
             //     model.StudentCode = user.StudentCode;
             // }
-            return View("TeacherDashboard",model);
+            return View(model);
         }
         [HttpGet]
         public IActionResult CreateAccount()

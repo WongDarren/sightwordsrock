@@ -28,9 +28,27 @@ namespace SightWordsProject.Controllers
             this.signInManager = signInManager;
             this.userManager = userManager;
         }
-        public IActionResult Login()
+        [HttpGet]
+        public IActionResult StudentLogin()
         {
-            return View("Views/Student/StudentLogin.cshtml");
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> StudentLogin(StudentLoginVM model)
+        {
+            if(ModelState.IsValid)
+            {
+
+                var result = await signInManager.PasswordSignInAsync(model.StudentId, model.Password, model.RememberMe, false);
+
+                if(result.Succeeded)
+                {
+                    return RedirectToAction("StudentDashboard", "Student");
+                }
+                
+                ModelState.AddModelError(string.Empty, "invalid login attempt");
+            }
+            return View(model);
         }
         public IActionResult StudentDashboard()
         {
@@ -66,7 +84,7 @@ namespace SightWordsProject.Controllers
                     LastName = model.ParentLast,
                     StudentCode = model.AccessCode,
                     StudentId = model.StudentId, 
-                    UserName = model.Email,
+                    UserName = model.StudentId,
                     Email = model.Email,
                     UserType = "student",
                 };

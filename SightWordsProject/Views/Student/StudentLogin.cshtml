@@ -1,5 +1,7 @@
+@model StudentLoginVM
+
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Student Login";
 }
 
 <section id="header">
@@ -13,11 +15,28 @@
         <div class="col-md-6 offset-md-3 text-center">
           <h2>Welcome, Student!</h2>
           <h3>Please sign in below!</h3><br>
-          <form>
-            <input class="form-control form-control-lg" type="text" placeholder="Student Access Code">
+          <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+              <input asp-for="StudentId" class="form-control form-control-lg" placeholder="Student Id">
+              <span asp-validation-for="StudentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
+              <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label asp-for="RememberMe">
+                  <input asp-for="RememberMe"/>
+                  @Html.DisplayNameFor(m => m.RememberMe)
+                </label>
+              </div>
+            </div>
+            <!-- <input class="form-control form-control-lg" type="text" placeholder="Student Access Code">
             <br>
             <input class="form-control form-control-lg" type="text" placeholder="Student ID Number">
-            <br>
+            <br> -->
             <button type="submit" class="btn btn-primary btn-lg">Login</button>
             <br>
             <br>
@@ -29,9 +48,9 @@
             </a> 
             <br>
             <br>
-            <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Student" asp-action="StudentDashboard">
+            <!-- <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Student" asp-action="StudentDashboard">
               Student Dashboard
-            </a>  
+            </a>   -->
           </form>
         </div>  
       </div>
