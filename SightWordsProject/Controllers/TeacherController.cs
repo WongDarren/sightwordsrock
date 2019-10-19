@@ -35,7 +35,6 @@ namespace SightWordsProject.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public async Task<IActionResult> TeacherLogin(TeacherLoginVM model)
         {

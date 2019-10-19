@@ -32,9 +32,16 @@
 }
 
 /*************** CUSTOM STYLES ***************/
-html, body{
+html {
  height: 100%;
- font-family: 'Century Gothic Regular'
+ font-family: 'Century Gothic Regular';
+ overflow: hidden;
+}
+
+body {
+height:100%;
+overflow: auto;
+font-family: 'Century Gothic Regular';
 }
 
 main {
@@ -48,6 +55,19 @@ main {
   text-align: center;
   display: flex;
   align-items: center;
+}
+
+#loginStyle {
+  background: #222;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  padding-top: 3%;
+}
+
+#header {
+  background: #222;
+  padding: 1% 0 0 1%;
 }
 
 #cover h1#title {
