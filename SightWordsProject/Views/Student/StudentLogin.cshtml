@@ -14,9 +14,15 @@
             <br>
             <input class="form-control form-control-lg" type="text" placeholder="Student ID Number">
             <br>
-            <a role="button" class="btn btn-primary btn-lg">
-              Log In
-            </a>
+            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+            <br>
+            <br>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+            <br>
+            <br>
+            <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Student" asp-action="CreateAccount">
+              Create Account
+            </a> 
             <br>
             <br>
             <a role="button" class="btn btn-primary btn-lg" asp-area="" asp-controller="Student" asp-action="StudentDashboard">
