@@ -12,5 +12,7 @@ namespace SightWordsProject.Models
         public string LastName { get; set; }
         public string School { get; set; }
         public string StudentCode { get; set; }
+        public string UserType { get; set; }
+        public string StudentId { get; set; }
     }
 }

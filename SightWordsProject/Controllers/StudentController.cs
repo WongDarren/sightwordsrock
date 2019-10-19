@@ -5,6 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SightWordsProject.Models;
+using SightWordsProject.ViewModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace SightWordsProject.Controllers
 {
@@ -12,6 +16,18 @@ namespace SightWordsProject.Controllers
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly IConfiguration configuration;
+        private string connectionString;
+        DbContextOptionsBuilder<AppDbContext> optionsBuilder;
+        public StudentController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
+        {
+            configuration = config;
+            optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
+            connectionString = configuration.GetConnectionString("DefaultConnection");
+            optionsBuilder.UseSqlServer(connectionString);
+            this.signInManager = signInManager;
+            this.userManager = userManager;
+        }
         public IActionResult Login()
         {
             return View("Views/Student/StudentLogin.cshtml");
@@ -32,25 +48,36 @@ namespace SightWordsProject.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAccount(CreateAccountVM model)
+        public async Task<IActionResult> CreateAccount(CreateStudentAccountVM model)
         {
+            using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
+            {
+                bool code = context.TeacherLogin.Any(x => x.StudentCode == model.AccessCode);
+                if(!code)
+                {
+                    ModelState.AddModelError("","Teacher's access code was not found");
+                }
+            }
             if(ModelState.IsValid)
             {
                 var user = new ApplicationUser 
                 {
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    School = model.School,
-                    UserName = model.Email, 
-                    Email = model.Email, 
-                    StudentCode = model.StudentCode,
+                    FirstName = model.ParentFirst,
+                    LastName = model.ParentLast,
+                    StudentCode = model.AccessCode,
+                    StudentId = model.StudentId, 
+                    UserName = model.Email,
+                    Email = model.Email,
+                    UserType = "student",
                 };
+
+
                 var result = await userManager.CreateAsync(user,model.Password);
 
                 if(result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("TeacherDashboard", "Teacher");
+                    return RedirectToAction("StudentDashboard", "Student");
                 }
                 foreach(var error in result.Errors)
                 {
@@ -58,7 +85,7 @@ namespace SightWordsProject.Controllers
                 }
             }
             
-            return View("TeacherDashboard",model);
+            return View(model);
         }
 
     }

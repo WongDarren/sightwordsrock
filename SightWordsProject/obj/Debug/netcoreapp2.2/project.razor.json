@@ -3006,6 +3006,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Student/CreateAccount.cshtml",
+      "TargetPath": "Views/Student/CreateAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/_ViewImports.cshtml",
       "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"

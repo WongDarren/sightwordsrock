@@ -79,6 +79,7 @@ namespace SightWordsProject.Controllers
                     UserName = model.Email, 
                     Email = model.Email, 
                     StudentCode = model.StudentCode,
+                    UserType = "teacher",
                 };
                 var result = await userManager.CreateAsync(user,model.Password);
 
@@ -93,7 +94,7 @@ namespace SightWordsProject.Controllers
                 }
             }
             
-            return View("TeacherDashboard",model);
+            return View(model);
         }
 
         public IActionResult TeacherDashboard()

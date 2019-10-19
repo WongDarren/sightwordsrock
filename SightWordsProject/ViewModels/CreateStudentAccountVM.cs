@@ -3,20 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using SightWordsProject.Utilities;
 
 namespace SightWordsProject.ViewModels
 {
-    public class CreateAccountVM
+    public class CreateStudentAccountVM
     {
-        [Required]
-        [Display(Name ="First Name")]
-        public string FirstName { get; set; }
+         [Required]
+         [Display(Name ="Parent First Name")]
+        public string ParentFirst { get; set; }
 
         [Required]
-        [Display(Name = "Last Name")]
-         public string LastName { get; set; }
+        [Display(Name = "{Parent Last Name")]
+         public string ParentLast { get; set; }
+        
+        [Required]
+        public string AccessCode { get; set; }
 
-         public string School { get; set; }
+        [Required]
+        public string StudentId { get; set; }
 
          [Required]
          [EmailAddress]
@@ -30,8 +35,6 @@ namespace SightWordsProject.ViewModels
          [Display(Name = "Confirm password")]
          [Compare("Password", ErrorMessage = "Password and confirmation password do not match.")]
          public string ConfirmPassword { get; set;}
-
-         public string StudentCode { get; set; }
       
     }
 }
