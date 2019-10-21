@@ -59,7 +59,6 @@ main {
 
 #loginStyle {
   background: #222;
-  height: 100%;
   text-align: center;
   display: flex;
   padding-top: 3%;
@@ -91,4 +90,8 @@ main {
 
 div.card {
   margin-bottom: 10px;
+}
+
+.fullHeight {
+  height: 100%;
 }

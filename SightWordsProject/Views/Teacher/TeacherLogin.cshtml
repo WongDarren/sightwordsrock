@@ -7,7 +7,7 @@
   <a role="button" class="btn btn-outline-primary btn-lg" asp-area="" asp-controller="Home" asp-action="Index">User Select</a>
 </section>
 
-<section id="loginStyle">
+<section class="fullHeight" id="loginStyle">
   <div id="cover-caption">
     <div id="container" class="container">
       <div class="row text-white">
@@ -17,11 +17,11 @@
           <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
-              <input asp-for="Email" class="form-control form-control-lg" placeholder="email">
+              <input asp-for="Email" class="form-control form-control-lg" placeholder="Email">
               <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-              <input asp-for="Password" class="form-control form-control-lg" placeholder="password">
+              <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
               <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
