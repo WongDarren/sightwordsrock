@@ -12076,29 +12076,36 @@
     ]
   },
   "packageFolders": {
-    "/Users/Nathan/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\mullanet\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
+      "projectUniqueName": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
       "projectName": "SightWordsProject",
-      "projectPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
-      "packagesPath": "/Users/Nathan/.nuget/packages/",
-      "outputPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/",
+      "projectPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
+      "packagesPath": "C:\\Users\\mullanet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Nathan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mullanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://lvvwd.pkgs.visualstudio.com/_packaging/ITAD/nuget/v3/index.json": {},
+        "https://lvvwd.pkgs.visualstudio.com/_packaging/ITAD_ThirdParty/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
@@ -12141,16 +12148,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

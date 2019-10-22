@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Student\\StudentStage1.cshtml",
+      "TargetPath": "Views\\Student\\StudentStage1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Teacher\\TeacherDashboard.cshtml",
       "TargetPath": "Views\\Teacher\\TeacherDashboard.cshtml",
       "FileKind": "mvc"
@@ -3011,6 +3016,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Student\\CreateAccount.cshtml",
+      "TargetPath": "Views\\Student\\CreateAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Teacher\\CreateAccount.cshtml",
       "TargetPath": "Views\\Teacher\\CreateAccount.cshtml",
       "FileKind": "mvc"
@@ -3031,8 +3041,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Teacher\\AddStudents.cshtml",
+      "TargetPath": "Views\\Teacher\\AddStudents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Student\\StudentLogin.cshtml",
       "TargetPath": "Views\\Student\\StudentLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Teacher\\ManageAccount.cshtml",
+      "TargetPath": "Views\\Teacher\\ManageAccount.cshtml",
       "FileKind": "mvc"
     }
   ],
