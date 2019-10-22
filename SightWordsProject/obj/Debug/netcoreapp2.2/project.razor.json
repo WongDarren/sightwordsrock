@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
+  "FilePath": "c:\\Users\\mullanet\\Documents\\CS472\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -204,7 +204,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Action"
@@ -218,7 +218,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the controller.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Controller"
@@ -232,7 +232,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the area.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Area"
@@ -246,7 +246,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the page.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action\" />, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller\" />\n            is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Page"
@@ -260,7 +260,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the page handler.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action\" />, or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller\" />\n            is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "PageHandler"
@@ -274,7 +274,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The protocol for the URL, such as \"http\" or \"https\".\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Protocol"
@@ -288,7 +288,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The host name.\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Host"
@@ -302,7 +302,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The URL fragment name.\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Fragment"
@@ -316,7 +316,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            Name of the route.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if one of <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action\" />, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller\" />, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Area\" /> \n            or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Route"
@@ -2961,98 +2961,78 @@
   "RootNamespace": "SightWordsProject",
   "Documents": [
     {
-      "FilePath": "Views/Teacher/TeacherLogin.cshtml",
-      "TargetPath": "Views/Teacher/TeacherLogin.cshtml",
+      "FilePath": "Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Home/Privacy.cshtml",
-      "TargetPath": "Views/Home/Privacy.cshtml",
+      "FilePath": "Views\\Teacher\\TeacherDashboard.cshtml",
+      "TargetPath": "Views\\Teacher\\TeacherDashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/CreateAccount.cshtml",
-      "TargetPath": "Views/Student/CreateAccount.cshtml",
+      "FilePath": "Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Teacher/StudentStats.cshtml",
-      "TargetPath": "Views/Teacher/StudentStats.cshtml",
+      "FilePath": "Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Teacher/AddStudents.cshtml",
-      "TargetPath": "Views/Teacher/AddStudents.cshtml",
+      "FilePath": "Views\\Student\\StudentDashboard.cshtml",
+      "TargetPath": "Views\\Student\\StudentDashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Teacher/ManageAccount.cshtml",
-      "TargetPath": "Views/Teacher/ManageAccount.cshtml",
+      "FilePath": "Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Teacher/TeacherDashboard.cshtml",
-      "TargetPath": "Views/Teacher/TeacherDashboard.cshtml",
+      "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Teacher/CreateAccount.cshtml",
-      "TargetPath": "Views/Teacher/CreateAccount.cshtml",
+      "FilePath": "Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/StudentDashboard.cshtml",
-      "TargetPath": "Views/Student/StudentDashboard.cshtml",
+      "FilePath": "Views\\Teacher\\StudentStats.cshtml",
+      "TargetPath": "Views\\Teacher\\StudentStats.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/StudentStages.cshtml",
-      "TargetPath": "Views/Student/StudentStages.cshtml",
+      "FilePath": "Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "FilePath": "Views\\Teacher\\CreateAccount.cshtml",
+      "TargetPath": "Views\\Teacher\\CreateAccount.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Home/Index.cshtml",
-      "TargetPath": "Views/Home/Index.cshtml",
+      "FilePath": "Views\\Student\\StudentStages.cshtml",
+      "TargetPath": "Views\\Student\\StudentStages.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/StudentLogin.cshtml",
-      "TargetPath": "Views/Student/StudentLogin.cshtml",
+      "FilePath": "Views\\Teacher\\TeacherLogin.cshtml",
+      "TargetPath": "Views\\Teacher\\TeacherLogin.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/Error.cshtml",
-      "TargetPath": "Views/Shared/Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/_ViewImports.cshtml",
-      "TargetPath": "Views/_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/_ViewStart.cshtml",
-      "TargetPath": "Views/_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views/Shared/_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/StudentStage1.cshtml",
-      "TargetPath": "Views/Student/StudentStage1.cshtml",
+      "FilePath": "Views\\Student\\StudentLogin.cshtml",
+      "TargetPath": "Views\\Student\\StudentLogin.cshtml",
       "FileKind": "mvc"
     }
   ],
