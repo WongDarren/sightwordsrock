@@ -14,7 +14,7 @@ namespace SightWordsProject.ViewModels
         public string ParentFirst { get; set; }
 
         [Required]
-        [Display(Name = "{Parent Last Name")]
+        [Display(Name = "Parent Last Name")]
          public string ParentLast { get; set; }
         
         [Required]
