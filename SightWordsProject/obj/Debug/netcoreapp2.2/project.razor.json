@@ -3049,11 +3049,6 @@
       "FilePath": "Views/Shared/_Layout.cshtml",
       "TargetPath": "Views/Shared/_Layout.cshtml",
       "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/StudentStage1.cshtml",
-      "TargetPath": "Views/Student/StudentStage1.cshtml",
-      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

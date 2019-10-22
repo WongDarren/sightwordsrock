@@ -333,5 +333,4 @@ c:/Users/mullanet/Documents/CS472/seniorprojectfall2019team9/SightWordsProject/o
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/SightWordsProject.deps.json
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/SightWordsProject.runtimeconfig.json
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/CreateAccount.cshtml.g.cs
-/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentStage1.cshtml.g.cs
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/AddStudents.cshtml.g.cs
