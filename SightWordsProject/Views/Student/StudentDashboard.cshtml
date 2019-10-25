@@ -7,9 +7,11 @@
       <div>
          <h1>Student Dashboard</h1>
       </div>
-      <div>
-         <a href=""><h4>Sign Out</h4></a>
-      </div>
+      <form method="post" asp-action="logout" asp-controller="Student">
+        <div>
+          <button type="submit" class="btn btn-primary btn-lg">Sign Out</button>
+        </div>
+      </form>
   </div>
 
   <div id="inProgress" class="modules_row">

@@ -7,9 +7,11 @@
          <h2>Welcome to your Dashboard</h2>
          <h1>TEACHER NAME</h1>
       </div>
-      <div>
-         <a href=""><h4>Sign out</h4></a>
-      </div>
+      <form method="post" asp-action="logout" asp-controller="Teacher">
+        <div>
+          <button type="submit" class="btn btn-primary btn-lg">Sign Out</button>
+        </div>
+      </form>
   </div>
   <br>
   <div class="row" style="color:white">

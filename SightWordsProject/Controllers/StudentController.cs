@@ -28,6 +28,13 @@ namespace SightWordsProject.Controllers
             this.signInManager = signInManager;
             this.userManager = userManager;
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
         [HttpGet]
         public IActionResult StudentLogin()
         {
@@ -58,6 +65,10 @@ namespace SightWordsProject.Controllers
         {
             return View("Views/Student/StudentStages.cshtml");
         }
+        public IActionResult StudentStage1()
+        {
+            return View();
+        }
 
         [HttpGet]
         public IActionResult CreateAccount()
@@ -70,7 +81,7 @@ namespace SightWordsProject.Controllers
         {
             using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
             {
-                bool code = context.TeacherLogin.Any(x => x.StudentCode == model.AccessCode);
+                bool code = context.TeacherLogin.Any(x => x.StudentCode == model.AccessCode && x.UserType == "teacher");
                 if(!code)
                 {
                     ModelState.AddModelError("","Teacher's access code was not found");

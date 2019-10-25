@@ -18,6 +18,7 @@ namespace SightWordsProject.ViewModels
          public string ParentLast { get; set; }
         
         [Required]
+        [MaxLength(8)]
         public string AccessCode { get; set; }
 
         [Required]
