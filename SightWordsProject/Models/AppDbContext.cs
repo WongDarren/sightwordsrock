@@ -15,6 +15,7 @@ namespace SightWordsProject.Models
         }
 
         public DbSet<ApplicationUser> TeacherLogin { get; set; }
+        public List<ApplicationUser> Students { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

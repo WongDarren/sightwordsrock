@@ -105,6 +105,32 @@ namespace SightWordsProject.Controllers
             var user = await GetCurrentUserAsync();
             return View(user);
         }
+
+        public IActionResult ViewClass(string id)
+        {
+            var user = GetUser(id);
+            AppDbContext context = new AppDbContext(optionsBuilder.Options);
+            var students = context.TeacherLogin.Where(x => x.StudentCode == user.StudentCode && x.UserType == "student").ToList();
+            List<ViewClassVM> model = new List<ViewClassVM>();
+
+            foreach(var student in students)
+            {
+                var item = new ViewClassVM
+                {
+                    StudentId = student.StudentId,
+                    ParentEmail = student.Email,
+                    ParentFirst = student.FirstName,
+                    ParentLast = student.LastName
+                };
+                model.Add(item);
+            }
+
+            return View(model);
+        }
+        public IActionResult Modules()
+        {
+            return View();
+        }
         public IActionResult StudentStats()
         {
             return View();
