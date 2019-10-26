@@ -1,61 +1,60 @@
+@model ManageUserVM
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="container" style="margin-top: 30px;">
-  <div class="d-flex justify-content-between">
-      <div>
-         <h1>Manage Account Information</h1>
-      </div>
-      <div>
-         <a href=""><h4>Sign out</h4></a>
-      </div>
-  </div>
+    <div class="d-flex justify-content-between">
+        <div>
+            <h1>Manage Account Information</h1>
+        </div>
+        <div>
+            <!-- <a href=""><h4>Sign out</h4></a> -->
+        </div>
+    </div>
 
   <div class="container">
     <div class="row">
         <!-- edit form column -->
-        <div class="col-lg-8">
+        <!-- <div class="col-lg-8">
             <div class="alert alert-info alert-dismissable"> <a class="panel-close close" data-dismiss="alert">×</a>
                 This is an <strong>.alert</strong>. Use this to show important messages to the user.
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-8 personal-info">
-             <form role="form">
+             <form role="form" method="post">
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                    <label asp-for="FirstName" class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" placeholder="Jane" />
+                        <input asp-for="FirstName" class="form-control" type="text"/>
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                        <!-- @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })   -->
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                    <label asp-for="LastName" class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" placeholder="Bishop" />
+                        <input asp-for="LastName"class="form-control" type="text"/>
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                        <!-- @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })   -->
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                    <label asp-for="Email" class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="email" placeholder="email@gmail.com" />
+                        <input asp-for="Email" class="form-control" type="email"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <!-- @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })   -->
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                    <label asp-for="School" class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" value="" placeholder="Street" />
+                        <input asp-for="School" class="form-control" type="text"/>
+                        <!-- @Html.TextBoxFor(m => m.School, new { @class = "form-control" })   -->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label"></label>
-                    <div class="col-lg-6">
-                        <input class="form-control" type="text" value="" placeholder="City" />
-                    </div>
-                    <div class="col-lg-3">
-                        <input class="form-control" type="text" value="" placeholder="State" />
-                    </div>
-                </div>
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Time Zone</label>
                     <div class="col-lg-9">
                         <select id="user_time_zone" class="form-control" size="0">
@@ -70,24 +69,28 @@
                             <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
                         </select>
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">New Password</label>
+                    <label asp-for="AccessCode" class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="password" placeholder="New Password" />
+                        <input asp-for="AccessCode" disabled class="form-control"/>
+                        <!-- <span asp-validation-for="Password" class="text-danger"></span> -->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                <!-- <div class="form-group row">
+                    <label asp-for="ConfirmPassword" class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="password" value="11111122333" />
+                        <input asp-for="ConfirmPassword" class="form-control" type="password"/>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
-                </div>
+                </div> -->
+                <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
                         <a role="button" class="btn btn-secondary" asp-area="" asp-controller="Teacher" asp-action="TeacherDashboard">Cancel</a>
-                        <input type="button" class="btn btn-primary" value="Save Changes" />
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <!-- <input type="button" class="btn btn-primary" value="Save Changes" /> -->
                     </div>
                 </div>
             </form>

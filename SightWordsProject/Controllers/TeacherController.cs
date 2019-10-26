@@ -19,6 +19,8 @@ namespace SightWordsProject.Controllers
         private readonly IConfiguration configuration;
         private string connectionString;
         DbContextOptionsBuilder<AppDbContext> optionsBuilder;
+        private Task<ApplicationUser> GetCurrentUserAsync() => userManager.GetUserAsync(HttpContext.User);
+
 
 
         public TeacherController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
@@ -42,7 +44,9 @@ namespace SightWordsProject.Controllers
             {
 
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
-
+                ApplicationUser user = new ApplicationUser();
+                AppDbContext context = new AppDbContext(optionsBuilder.Options);
+                user = context.TeacherLogin.Single(x => x.UserName == model.Email);
                 if(result.Succeeded)
                 {
                     return RedirectToAction("TeacherDashboard", "Teacher");
@@ -50,12 +54,6 @@ namespace SightWordsProject.Controllers
                 
                 ModelState.AddModelError(string.Empty, "invalid login attempt");
             }
-
-            // using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
-            // {
-            //     ApplicationUser user = context.TeacherLogin.Single(x => x.UserName == model.Email);
-            //     model.StudentCode = user.StudentCode;
-            // }
             return View(model);
         }
         [HttpGet]
@@ -101,18 +99,55 @@ namespace SightWordsProject.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
-        public IActionResult TeacherDashboard()
+        [HttpGet]
+        public async Task<IActionResult> TeacherDashboard()
         {
-            return View();
+            var user = await GetCurrentUserAsync();
+            return View(user);
         }
         public IActionResult StudentStats()
         {
             return View();
         }
 
-        public IActionResult ManageAccount()
+        [HttpGet]
+        public async Task<IActionResult> ManageAccount(string id)
         {
-            return View();
+            var user = await userManager.FindByIdAsync(id);
+
+            var model = new ManageUserVM()
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                School = user.School,
+                Email = user.Email,
+                AccessCode = user.StudentCode
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ManageAccount(ManageUserVM model)
+        {
+            var user = await userManager.FindByIdAsync(model.Id);
+
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
+            user.School = model.School;
+            user.Email = model.Email;
+
+            var result = await userManager.UpdateAsync(user);
+
+            if(result.Succeeded)
+            {
+                return RedirectToAction("TeacherDashboard");
+            }
+
+            foreach(var errors in result.Errors)
+            {
+                ModelState.AddModelError("",errors.Description);
+            }
+            return View(model);
         }
 
         public string GenerateStudentCode()
@@ -127,6 +162,14 @@ namespace SightWordsProject.Controllers
             }
             var finalString = new String(stringChars);
             return(finalString);
+        }
+        public ApplicationUser GetUser(string id)
+        {
+            using (AppDbContext context = new AppDbContext(optionsBuilder.Options))
+            {
+                ApplicationUser user = context.TeacherLogin.Single(x => x.Id == id);
+                return user;
+            }
         }
     }
 }
