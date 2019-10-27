@@ -20,12 +20,14 @@ namespace SightWordsProject
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
             */
-
+            string name = "JEFF";
+            Console.WriteLine(name);
             Console.WriteLine("What is your name?");
             Console.WriteLine("Website should load after you put your name in.");
-            string name = Console.ReadLine();
-            Console.WriteLine("Hi " + name);
-            // NOW WEBSITE should load
+            string name2 = Console.ReadLine();
+            Console.WriteLine($"Input is [{name2}]");
+            // DEBUG CONSOLE doesn't take input, so can't do ReadLine().
+            // need to find a way to use an external terminal or something to test TTS
 
             CreateWebHostBuilder(args).Build().Run();    
         }
