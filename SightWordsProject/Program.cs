@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+
 using Microsoft.CognitiveServices.Speech;
 
 namespace SightWordsProject
@@ -15,11 +16,10 @@ namespace SightWordsProject
     {
         public static void Main(string[] args)
         {
-            /* 
             SynthesisToSpeakerAsync().Wait();
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
-            */
+            //Console.WriteLine("Press any key to exit...");
+            //Console.ReadKey();
+            /* 
             string name = "JEFF";
             Console.WriteLine(name);
             Console.WriteLine("What is your name?");
@@ -28,6 +28,8 @@ namespace SightWordsProject
             Console.WriteLine($"Input is [{name2}]");
             // DEBUG CONSOLE doesn't take input, so can't do ReadLine().
             // need to find a way to use an external terminal or something to test TTS
+            */
+            
 
             CreateWebHostBuilder(args).Build().Run();    
         }
@@ -47,7 +49,7 @@ namespace SightWordsProject
                 Console.WriteLine("2");
                 Console.WriteLine("1");
                 Console.Write("> ");
-                string text = Console.ReadLine();
+                string text = "This is the text to speech voice. Website will load right after this.";
 
                 using (var result = await synthesizer.SpeakTextAsync(text))
                 {
