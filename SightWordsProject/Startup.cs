@@ -14,7 +14,6 @@ using SightWordsProject.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Data.SqlClient;
 
-
 namespace SightWordsProject
 {
     public class Startup
@@ -22,6 +21,8 @@ namespace SightWordsProject
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            
+            
         }
 
         public IConfiguration Configuration { get; }
