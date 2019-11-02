@@ -22,6 +22,9 @@ namespace SightWordsProject.ViewModels
         public string Email { get; set; }
 
         public string AccessCode { get; set; }
+        
+        [Required]
+        public int GradeLevel { get; set; }
 
         // [Required]
         // [DataType(DataType.Password)]

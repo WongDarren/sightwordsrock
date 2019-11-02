@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using SightWordsProject.Models;
 
 namespace SightWordsProject.ViewModels
 {
@@ -32,6 +33,9 @@ namespace SightWordsProject.ViewModels
          public string ConfirmPassword { get; set;}
 
          public string StudentCode { get; set; }
+
+        [Required]
+        public int GradeLevel { get; set; }
       
     }
 }

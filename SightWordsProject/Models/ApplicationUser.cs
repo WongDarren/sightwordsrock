@@ -14,5 +14,6 @@ namespace SightWordsProject.Models
         public string StudentCode { get; set; }
         public string UserType { get; set; }
         public string StudentId { get; set; }
+        public int GradeLevel { get; set; }
     }
 }
