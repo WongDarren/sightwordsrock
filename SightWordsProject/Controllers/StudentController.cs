@@ -65,9 +65,9 @@ namespace SightWordsProject.Controllers
         {
             return View("Views/Student/StudentStages.cshtml");
         }
-        public IActionResult StudentStage1()
+        public IActionResult StageGame()
         {
-            return View();
+            return View("Views/Student/Game/Stage1.cshtml");
         }
 
         [HttpGet]

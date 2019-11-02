@@ -59,6 +59,7 @@ namespace SightWordsProject.Controllers
         [HttpGet]
         public IActionResult CreateAccount()
         {
+
             return View("Views/Teacher/CreateAccount.cshtml");
         }
 
@@ -77,6 +78,7 @@ namespace SightWordsProject.Controllers
                     Email = model.Email, 
                     StudentCode = model.StudentCode,
                     UserType = "teacher",
+                    GradeLevel = model.GradeLevel
                 };
                 var result = await userManager.CreateAsync(user,model.Password);
 
@@ -106,6 +108,7 @@ namespace SightWordsProject.Controllers
             return View(user);
         }
 
+        [HttpGet]
         public IActionResult ViewClass(string id)
         {
             var user = GetUser(id);
@@ -120,7 +123,7 @@ namespace SightWordsProject.Controllers
                     StudentId = student.StudentId,
                     ParentEmail = student.Email,
                     ParentFirst = student.FirstName,
-                    ParentLast = student.LastName
+                    ParentLast = student.LastName,
                 };
                 model.Add(item);
             }
@@ -148,7 +151,8 @@ namespace SightWordsProject.Controllers
                 LastName = user.LastName,
                 School = user.School,
                 Email = user.Email,
-                AccessCode = user.StudentCode
+                AccessCode = user.StudentCode,
+                GradeLevel = user.GradeLevel
             };
             return View(model);
         }
@@ -161,6 +165,7 @@ namespace SightWordsProject.Controllers
             user.LastName = model.LastName;
             user.School = model.School;
             user.Email = model.Email;
+            user.GradeLevel = model.GradeLevel;
 
             var result = await userManager.UpdateAsync(user);
 

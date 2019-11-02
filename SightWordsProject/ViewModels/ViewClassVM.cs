@@ -15,5 +15,7 @@ namespace SightWordsProject.ViewModels
         public string ParentFirst { get; set; }
         public string ParentLast { get; set; }
 
+        public string GradeLevel { get; set; }
+
     }
 }

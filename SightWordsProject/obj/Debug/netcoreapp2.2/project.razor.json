@@ -11,6 +11,121 @@
   },
   "ProjectWorkspaceState": null,
   "RootNamespace": "SightWordsProject",
+<<<<<<< HEAD
   "Documents": [],
+=======
+  "Documents": [
+    {
+      "FilePath": "Views/Teacher/ViewClass.cshtml",
+      "TargetPath": "Views/Teacher/ViewClass.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/AddStudents.cshtml",
+      "TargetPath": "Views/Teacher/AddStudents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/TeacherLogin.cshtml",
+      "TargetPath": "Views/Teacher/TeacherLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/TeacherDashboard.cshtml",
+      "TargetPath": "Views/Teacher/TeacherDashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/StudentStats.cshtml",
+      "TargetPath": "Views/Teacher/StudentStats.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/Game/Stage1.cshtml",
+      "TargetPath": "Views/Student/Game/Stage1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/ManageAccount.cshtml",
+      "TargetPath": "Views/Teacher/ManageAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/StudentStages.cshtml",
+      "TargetPath": "Views/Student/StudentStages.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/StudentLogin.cshtml",
+      "TargetPath": "Views/Student/StudentLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/CreateAccount.cshtml",
+      "TargetPath": "Views/Student/CreateAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/_ViewImports.cshtml",
+      "TargetPath": "Views/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/Privacy.cshtml",
+      "TargetPath": "Views/Home/Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/_ViewStart.cshtml",
+      "TargetPath": "Views/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/Modules.cshtml",
+      "TargetPath": "Views/Teacher/Modules.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/StudentDashboard.cshtml",
+      "TargetPath": "Views/Student/StudentDashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Teacher/CreateAccount.cshtml",
+      "TargetPath": "Views/Teacher/CreateAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/StudentStage1.cshtml",
+      "TargetPath": "Views/Student/StudentStage1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Shared/Error.cshtml",
+      "TargetPath": "Views/Shared/Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+>>>>>>> master
   "SerializationFormat": "0.2"
 }

@@ -337,6 +337,7 @@ c:/Users/mullanet/Documents/CS472/seniorprojectfall2019team9/SightWordsProject/o
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentStage1.cshtml.g.cs
 /Users/trevormullaney/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentStage1.g.cshtml.cs
 /Users/trevormullaney/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ViewClass.g.cshtml.cs
+<<<<<<< HEAD
 /Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/CreateAccount.g.cshtml.cs
 /Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentStage1.g.cshtml.cs
 /Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/AddStudents.g.cshtml.cs
@@ -400,3 +401,32 @@ C:\Users\wongd\Documents\Bitbucket\seniorprojectfall2019team9\SightWordsProject\
 C:\Users\wongd\Documents\Bitbucket\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\SightWordsProject.dll
 C:\Users\wongd\Documents\Bitbucket\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\SightWordsProject.pdb
 C:\Users\wongd\Documents\Bitbucket\seniorprojectfall2019team9\SightWordsProject\obj\Debug\netcoreapp2.2\SightWordsProject.csproj.CopyComplete
+=======
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/web.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/web.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/appsettings.Development.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/appsettings.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/appsettings.Development.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/appsettings.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/SightWordsProject.deps.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/SightWordsProject.runtimeconfig.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/SightWordsProject.deps.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/SightWordsProject.runtimeconfig.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/web.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/appsettings.Development.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/appsettings.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/SightWordsProject.deps.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/SightWordsProject.runtimeconfig.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/CreateAccount.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/Game/Stage1.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentDashboard.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentStage1.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/AddStudents.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/CreateAccount.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ManageAccount.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/StudentStats.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeacherDashboard.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ViewClass.cshtml.g.cs
+/Users/trevormullaney/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/Game/Stage1.g.cshtml.cs
+/Users/trevormullaney/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/Modules.g.cshtml.cs
+>>>>>>> master

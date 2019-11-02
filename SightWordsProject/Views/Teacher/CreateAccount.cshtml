@@ -40,6 +40,20 @@
                   </div>
                 </div>
                 <div class="form-group row">
+                  <label style="text-align:right;" class="col-sm-4 col-form-label form-control-label">Grade</label>
+                  <div class="col-sm-8">
+                    <select asp-for="GradeLevel" class="form-control form-control-lg">
+                      <option disabled selected="selected">Select Grade</option>
+                      <option value=1>First Grade</option>
+                      <option value=2>Second Grade</option>
+                      <option value=3>Third Grade</option>
+                      <option value=4>Fourth Grade</option>
+                      <option value=5>Fifth Grade</option>
+                    </select>
+                    <span asp-validation-for="GradeLevel" class="text-danger"></span>
+                  </div>
+                </div>
+                <div class="form-group row">
                   <label style="text-align:right;" class="col-sm-4 col-form-label form-control-label">Email</label>
                   <div class="col-sm-8">
                     <input asp-for="Email" class="form-control form-control-lg" placeholder="Email">
