@@ -140,6 +140,13 @@ namespace SightWordsProject.Controllers
         }
 
         [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+
+            return View("Views/Teacher/ForgotPassword.cshtml");
+        }
+
+        [HttpGet]
         public async Task<IActionResult> ManageAccount(string id)
         {
             var user = await userManager.FindByIdAsync(id);

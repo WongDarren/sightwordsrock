@@ -76,6 +76,13 @@ namespace SightWordsProject.Controllers
             return View("Views/Student/CreateAccount.cshtml");
         }
 
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+
+            return View("Views/Student/ForgotPassword.cshtml");
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateAccount(CreateStudentAccountVM model)
         {

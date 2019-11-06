@@ -46,6 +46,7 @@ font-family: 'Century Gothic Regular';
 
 main {
   height: 100%;
+  min-height: 100vh;
 }
 
 #cover {
@@ -62,6 +63,7 @@ main {
   text-align: center;
   display: flex;
   padding-top: 3%;
+  min-height: 100vh;
 }
 
 #header {
@@ -94,4 +96,5 @@ div.card {
 
 .fullHeight {
   height: 100%;
+  min-height: 100vh;
 }

@@ -491,3 +491,13 @@ c:/Users/wongd/Documents/Bitbucket/seniorprojectfall2019team9/SightWordsProject/
 /Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.dll
 /Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.pdb
 /Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.csproj.CopyComplete
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/web.config
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/appsettings.Development.json
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/appsettings.json
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/SightWordsProject.deps.json
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/SightWordsProject.runtimeconfig.json
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/Game/Stage1.cshtml.g.cs
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/Modules.cshtml.g.cs
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ViewClass.cshtml.g.cs
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ForgotPassword.cshtml.g.cs
+/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/ForgotPassword.cshtml.g.cs

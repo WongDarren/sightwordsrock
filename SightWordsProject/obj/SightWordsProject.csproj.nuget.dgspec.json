@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/SightWordsProject.csproj": {}
+    "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj": {}
   },
   "projects": {
-    "/Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/SightWordsProject.csproj": {
+    "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/SightWordsProject.csproj",
+        "projectUniqueName": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
         "projectName": "SightWordsProject",
-        "projectPath": "/Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/SightWordsProject.csproj",
-        "packagesPath": "/Users/r08mbp/.nuget/packages/",
-        "outputPath": "/Users/r08mbp/Documents/SeniorProjectFall2019/SightWordsProject/obj/",
+        "projectPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
+        "packagesPath": "/Users/Nathan/.nuget/packages/",
+        "outputPath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/r08mbp/.nuget/NuGet/NuGet.Config"
+          "/Users/Nathan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

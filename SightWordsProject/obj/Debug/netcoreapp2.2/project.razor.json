@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\wongd\\Documents\\Bitbucket\\seniorprojectfall2019team9\\SightWordsProject\\SightWordsProject.csproj",
+  "FilePath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,113 +2961,123 @@
   "RootNamespace": "SightWordsProject",
   "Documents": [
     {
-      "FilePath": "Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "Views/Teacher/TeacherLogin.cshtml",
+      "TargetPath": "Views/Teacher/TeacherLogin.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Student\\StudentStage1.cshtml",
-      "TargetPath": "Views\\Student\\StudentStage1.cshtml",
+      "FilePath": "Views/Student/Game/Stage1.cshtml",
+      "TargetPath": "Views/Student/Game/Stage1.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\TeacherDashboard.cshtml",
-      "TargetPath": "Views\\Teacher\\TeacherDashboard.cshtml",
+      "FilePath": "Views/Teacher/ForgotPassword.cshtml",
+      "TargetPath": "Views/Teacher/ForgotPassword.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "Views/Home/Privacy.cshtml",
+      "TargetPath": "Views/Home/Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "Views/Student/CreateAccount.cshtml",
+      "TargetPath": "Views/Student/CreateAccount.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Student\\StudentDashboard.cshtml",
-      "TargetPath": "Views\\Student\\StudentDashboard.cshtml",
+      "FilePath": "Views/Teacher/StudentStats.cshtml",
+      "TargetPath": "Views/Teacher/StudentStats.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\ViewClass.cshtml",
-      "TargetPath": "Views\\Teacher\\ViewClass.cshtml",
+      "FilePath": "Views/Teacher/AddStudents.cshtml",
+      "TargetPath": "Views/Teacher/AddStudents.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "Views/Teacher/ManageAccount.cshtml",
+      "TargetPath": "Views/Teacher/ManageAccount.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\Modules.cshtml",
-      "TargetPath": "Views\\Teacher\\Modules.cshtml",
+      "FilePath": "Views/Teacher/TeacherDashboard.cshtml",
+      "TargetPath": "Views/Teacher/TeacherDashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "Views/Student/ForgotPassword.cshtml",
+      "TargetPath": "Views/Student/ForgotPassword.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Student\\Game\\Stage1.cshtml",
-      "TargetPath": "Views\\Student\\Game\\Stage1.cshtml",
+      "FilePath": "Views/Teacher/ViewClass.cshtml",
+      "TargetPath": "Views/Teacher/ViewClass.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "Views/Teacher/Modules.cshtml",
+      "TargetPath": "Views/Teacher/Modules.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\StudentStats.cshtml",
-      "TargetPath": "Views\\Teacher\\StudentStats.cshtml",
+      "FilePath": "Views/Teacher/CreateAccount.cshtml",
+      "TargetPath": "Views/Teacher/CreateAccount.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "Views/Student/StudentDashboard.cshtml",
+      "TargetPath": "Views/Student/StudentDashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Student\\CreateAccount.cshtml",
-      "TargetPath": "Views\\Student\\CreateAccount.cshtml",
+      "FilePath": "Views/Student/StudentStages.cshtml",
+      "TargetPath": "Views/Student/StudentStages.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\CreateAccount.cshtml",
-      "TargetPath": "Views\\Teacher\\CreateAccount.cshtml",
+      "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Student\\StudentStages.cshtml",
-      "TargetPath": "Views\\Student\\StudentStages.cshtml",
+      "FilePath": "Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\TeacherLogin.cshtml",
-      "TargetPath": "Views\\Teacher\\TeacherLogin.cshtml",
+      "FilePath": "Views/Student/StudentLogin.cshtml",
+      "TargetPath": "Views/Student/StudentLogin.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\AddStudents.cshtml",
-      "TargetPath": "Views\\Teacher\\AddStudents.cshtml",
+      "FilePath": "Views/Shared/Error.cshtml",
+      "TargetPath": "Views/Shared/Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Student\\StudentLogin.cshtml",
-      "TargetPath": "Views\\Student\\StudentLogin.cshtml",
+      "FilePath": "Views/_ViewImports.cshtml",
+      "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Teacher\\ManageAccount.cshtml",
-      "TargetPath": "Views\\Teacher\\ManageAccount.cshtml",
+      "FilePath": "Views/_ViewStart.cshtml",
+      "TargetPath": "Views/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/StudentStage1.cshtml",
+      "TargetPath": "Views/Student/StudentStage1.cshtml",
       "FileKind": "mvc"
     }
   ],
