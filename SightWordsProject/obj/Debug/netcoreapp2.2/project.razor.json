@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "FilePath": "/Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/SightWordsProject.csproj",
-=======
-  "FilePath": "/Users/trevormullaney/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
->>>>>>> 7e049d10ca29050aeff6e7f96a763aa10324bde8
+  "FilePath": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2965,30 +2961,6 @@
   "RootNamespace": "SightWordsProject",
   "Documents": [
     {
-<<<<<<< HEAD
-      "FilePath": "Views/Teacher/TeacherLogin.cshtml",
-      "TargetPath": "Views/Teacher/TeacherLogin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/Game/Stage1.cshtml",
-      "TargetPath": "Views/Student/Game/Stage1.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Teacher/ForgotPassword.cshtml",
-      "TargetPath": "Views/Teacher/ForgotPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Home/Privacy.cshtml",
-      "TargetPath": "Views/Home/Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/CreateAccount.cshtml",
-      "TargetPath": "Views/Student/CreateAccount.cshtml",
-=======
       "FilePath": "Views/Teacher/ViewClass.cshtml",
       "TargetPath": "Views/Teacher/ViewClass.cshtml",
       "FileKind": "mvc"
@@ -3011,7 +2983,6 @@
     {
       "FilePath": "Views/Teacher/TeacherDashboard.cshtml",
       "TargetPath": "Views/Teacher/TeacherDashboard.cshtml",
->>>>>>> 7e049d10ca29050aeff6e7f96a763aa10324bde8
       "FileKind": "mvc"
     },
     {
@@ -3020,95 +2991,6 @@
       "FileKind": "mvc"
     },
     {
-<<<<<<< HEAD
-      "FilePath": "Views/Teacher/AddStudents.cshtml",
-      "TargetPath": "Views/Teacher/AddStudents.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Teacher/ManageAccount.cshtml",
-      "TargetPath": "Views/Teacher/ManageAccount.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Teacher/TeacherDashboard.cshtml",
-      "TargetPath": "Views/Teacher/TeacherDashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/ForgotPassword.cshtml",
-      "TargetPath": "Views/Student/ForgotPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Teacher/ViewClass.cshtml",
-      "TargetPath": "Views/Teacher/ViewClass.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Teacher/Modules.cshtml",
-      "TargetPath": "Views/Teacher/Modules.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Teacher/CreateAccount.cshtml",
-      "TargetPath": "Views/Teacher/CreateAccount.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/StudentDashboard.cshtml",
-      "TargetPath": "Views/Student/StudentDashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/StudentStages.cshtml",
-      "TargetPath": "Views/Student/StudentStages.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Home/Index.cshtml",
-      "TargetPath": "Views/Home/Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/StudentLogin.cshtml",
-      "TargetPath": "Views/Student/StudentLogin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Shared/Error.cshtml",
-      "TargetPath": "Views/Shared/Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/_ViewImports.cshtml",
-      "TargetPath": "Views/_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/_ViewStart.cshtml",
-      "TargetPath": "Views/_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views/Shared/_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Student/StudentStage1.cshtml",
-      "TargetPath": "Views/Student/StudentStage1.cshtml",
-=======
       "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
@@ -3174,6 +3056,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Student/Game/Stage2.cshtml",
+      "TargetPath": "Views/Student/Game/Stage2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Student/StudentStage1.cshtml",
       "TargetPath": "Views/Student/StudentStage1.cshtml",
       "FileKind": "mvc"
@@ -3186,7 +3073,6 @@
     {
       "FilePath": "Views/Shared/_Layout.cshtml",
       "TargetPath": "Views/Shared/_Layout.cshtml",
->>>>>>> 7e049d10ca29050aeff6e7f96a763aa10324bde8
       "FileKind": "mvc"
     }
   ],

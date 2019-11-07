@@ -137,11 +137,7 @@ C:/Users/mullanet/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProj
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.runtimeconfig.dev.json
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.dll
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.pdb
-/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.Views.dll
-/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.Views.pdb
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.csprojAssemblyReference.cache
-/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.RazorAssemblyInfo.cache
-/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.RazorAssemblyInfo.cs
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.AssemblyInfoInputs.cache
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.AssemblyInfo.cs
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.TagHelpers.input.cache
@@ -160,7 +156,6 @@ C:/Users/mullanet/Documents/CS472/repo/seniorprojectfall2019team9/SightWordsProj
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.RazorTargetAssemblyInfo.cache
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.RazorTargetAssemblyInfo.cs
-/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.Views.pdb
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.dll
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.pdb
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.csproj.CopyComplete
@@ -501,3 +496,18 @@ c:/Users/wongd/Documents/Bitbucket/seniorprojectfall2019team9/SightWordsProject/
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ViewClass.cshtml.g.cs
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ForgotPassword.cshtml.g.cs
 /Users/Nathan/Documents/School/Fall Semester '19/CS 472/sight words repo/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/ForgotPassword.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/publish/web 2.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/publish/web.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/web 2.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/web 2.config
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/publish/appsettings.Development.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/publish/appsettings.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/publish/SightWordsProject.deps.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/publish/publish/publish/publish/SightWordsProject.runtimeconfig.json
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.Razor.dll
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/bin/Debug/netcoreapp2.2/SightWordsProject.Razor.pdb
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/ForgotPassword.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/Game/Stage2.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ForgotPassword.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/Modules.cshtml.g.cs
+/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.Razor.pdb

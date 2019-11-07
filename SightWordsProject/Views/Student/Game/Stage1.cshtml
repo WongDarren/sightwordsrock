@@ -216,30 +216,28 @@ body {
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered">Centered</div>
-    <span class="project-name">The Catcher in the Rye</span>
+      <div class="centered"><h4 id = "box1">Centered<h4></div>
+    <span class="project-name">The Catcher in the Rye </span>
   </div>
   <div class="project">
-    <img class="project-img" src="https://timesofindia.indiatimes.com/thumb/msid-67586673,width-800,height-600,resizemode-4/67586673.jpg" />
-    <span class="project-name">To Kill a Mockingbird </span>
+    <img class="project-img">
+      <div class="centered">2nd Word</div>
+    <span class="project-name">The Catcher in the Rye</span>
   </div>
   <div class="project">
     <img class="project-img" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1440,f_auto/DCTM_Penguin_UK_DK_AL316928_wsfijk.jpg" />
     <span class="project-name">The Great Gatsby</span>
   </div>
   <div class="project">
-    <img class="project-img" src="https://source.unsplash.com/908x908" />
-    <span class="project-name">Animal Farm</span>
+    <img class="project-img">
+      <div class="centered">Test</div>
+    <span class="project-name">Kyle Sama </span>
   </div>
-  <div class="project">
-    <img class="project-img" src="https://source.unsplash.com/908x908" />
-    <span class="project-name">The Diary of a Young Girl</span>
-  </div>
+  
   <div class="drop">DROP HERE</div>
 </div>
 
 <script>
-
 const projects = document.querySelectorAll(".project");
 const drop = document.querySelector(".drop");
 const showcase = document.querySelector(".showcase");
@@ -361,12 +359,16 @@ drop.addEventListener("click", () => {
     dropped = false;
     target.style.transform = "none";
     stopped();
+
+    document.getElementById("box1").innerHTML = "Walllaaaa";
   }
 });
 
 function score(){
   document.getElementById("myScore").innerHTML = "My score: " + i;
-  
 }
+
+
+
 
 </script>
