@@ -16,7 +16,7 @@ namespace SightWordsProject
     {
         public static void Main(string[] args)
         {
-            SynthesisToSpeakerAsync().Wait();
+            //SynthesisToSpeakerAsync().Wait();
             //Console.WriteLine("Press any key to exit...");
             //Console.ReadKey();
             /* 

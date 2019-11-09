@@ -511,3 +511,7 @@ c:/Users/wongd/Documents/Bitbucket/seniorprojectfall2019team9/SightWordsProject/
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ForgotPassword.cshtml.g.cs
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/Modules.cshtml.g.cs
 /Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/SightWordsProject.Razor.pdb
+/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/ForgotPassword.g.cshtml.cs
+/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Student/Game/Stage1.g.cshtml.cs
+/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ForgotPassword.g.cshtml.cs
+/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/Modules.g.cshtml.cs
