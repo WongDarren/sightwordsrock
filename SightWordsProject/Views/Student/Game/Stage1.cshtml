@@ -14,16 +14,33 @@ body {
   overflow: hidden;
 }
 
+.project {
+  height: 120px;
+  width: 120px;
+  flex-shrink: 0;
+  
+  border-radius: 50%;
+  border-style: solid;
+  border-width: thick;
+  user-select: none;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+  transform-origin: center;
+}
+
 .project-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   user-select: none;
   pointer-events: none;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   transition: .5s;
 }
+
 .header-project {
   position: fixed;
   top: 20px;
@@ -46,20 +63,6 @@ body {
   font-weight: 500;
   padding: 10px;
   user-select: none;
-}
-
-.project {
-  width: 80px;
-  flex-shrink: 0;
-  margin: 0 10px;
-  height: 80px;
-  border-radius: 50%;
-  user-select: none;
-  cursor: pointer;
-
-  position: relative;
-  z-index: 1;
-  transform-origin: center;
 }
 
 .project-name {
@@ -152,14 +155,15 @@ body {
   width: 0;
   height: 0;
   margin: 0;
+  border-style: dotted;
 }
 
 .showcase.is-preview > .project.is-expanded {
   opacity: 1;
   transition: .7s;
   z-index: 2;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   transform: none !important;
   z-index: 2;
 }
@@ -169,28 +173,33 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /*
   width: 100%;
   height: 50%;
+  border-radius: 50%;
+  display: block;
+  */
   object-fit: cover;
   object-position: center;
-  display: block;
+  
   user-select: none;
   pointer-events: none;
-  border-radius: 50%;
   text-align: center;
   transition: .5s;
 
 }
 
-#logo {
+.speaker{
   height: 100%;
+  cursor: pointer;
 }
 
 </style>
 
 <div class="showcase">
   <div class="header-project">
-    <img id="logo" src="~/img/rock.png">
+    <img class="speaker" src="~/img/rock.png">
+    <!--Make .speaker able to say word when clicked-->
   </div>
   <div class="score-project">
     <h2 id="myScore">My score: 0</h2>
@@ -206,7 +215,11 @@ body {
     <span class="project-name">The Catcher in the Rye</span>
   </div>
   <div class="project">
+    <img class="project-img">
+      <div class="centered">2nd Word</div>
+    <!--
     <img class="project-img" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1440,f_auto/DCTM_Penguin_UK_DK_AL316928_wsfijk.jpg" />
+    -->
     <span class="project-name">The Great Gatsby</span>
   </div>
   <div class="project">
@@ -247,6 +260,8 @@ const stopped = () => {
     showcase.classList.add("is-preview");
     target.classList.add("is-expanded");
     drop.classList.add("is-dropped");
+    drop.textContent = "CLOSE";
+
     expanded = true;
     i = i + 1;
     score();
@@ -254,6 +269,7 @@ const stopped = () => {
     drop.classList.remove("is-dropped");
     showcase.classList.remove("is-preview");
     target.classList.remove("is-expanded");
+    drop.textContent = "DROP HERE";
     expanded = false;
   }
 };
