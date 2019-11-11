@@ -206,26 +206,23 @@ body {
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered"><h4 id = "box1">Centered<h4></div>
+      <div class="centered"><h4 id = "box1">1st word<h4></div>
     <span class="project-name">The Catcher in the Rye </span>
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered">2nd Word</div>
+      <div class="centered"><h4 id = "box2">2nd word<h4></div>
     <span class="project-name">The Catcher in the Rye</span>
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered">2nd Word</div>
-    <!--
-    <img class="project-img" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1440,f_auto/DCTM_Penguin_UK_DK_AL316928_wsfijk.jpg" />
-    -->
-    <span class="project-name">The Great Gatsby</span>
+      <div class="centered"><h4 id = "box3">3rd word<h4></div>
+    <span class="project-name">The Catcher in the Rye</span>
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered">Test</div>
-    <span class="project-name">Kyle Sama </span>
+      <div class="centered"><h4 id = "box4">4th word<h4></div>
+    <span class="project-name">The Catcher in the Rye</span>
   </div>
   
   <div class="drop">
@@ -238,6 +235,15 @@ body {
 const projects = document.querySelectorAll(".project");
 const drop = document.querySelector(".drop");
 const showcase = document.querySelector(".showcase");
+
+// The array of words should be passed here
+var j = 0;
+var words = ["a", "b", "c", "d", "e", "f", "g", "h",];
+var chosen = ["a, c, g"];
+shuffle(words);
+wordGenerator();
+
+// wordGenerator() change words from id=box1 to box4
 
 var i = 0;
 let start,
@@ -257,19 +263,17 @@ const stopped = () => {
     drop.classList.remove("is-ready");
   }
   if (dropped) {
-    showcase.classList.add("is-preview");
+    //showcase.classList.add("is-preview");
     target.classList.add("is-expanded");
     drop.classList.add("is-dropped");
-    drop.textContent = "CLOSE";
-
     expanded = true;
-    i = i + 1;
+    wordGenerator();
+    //validatedWord();
     score();
   } else {
     drop.classList.remove("is-dropped");
     showcase.classList.remove("is-preview");
     target.classList.remove("is-expanded");
-    drop.textContent = "DROP HERE";
     expanded = false;
   }
 };
@@ -352,21 +356,44 @@ document.addEventListener("touchmove", e => {
   docMove(e, "touch");
 });
 
-drop.addEventListener("click", () => {
+drop.addEventListener("mouseout", () => {
   if (expanded) {
     dropped = false;
     target.style.transform = "none";
     stopped();
-
-    document.getElementById("box1").innerHTML = "Walllaaaa";
   }
 });
 
 function score(){
   document.getElementById("myScore").innerHTML = "My score: " + i;
 }
-
-
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+function wordGenerator(){
+    document.getElementById("box1").innerHTML = words[j];
+    document.getElementById("box2").innerHTML = words[j+1];
+    document.getElementById("box3").innerHTML = words[j+2];
+    document.getElementById("box4").innerHTML = words[j+3];
+    j=j+4;
+    if(j > words.length){
+      alert("Run out of words!");
+    }
+}
+function validatedWord(dbWord, chosen){
+  if (dbword === chosen){
+    return true;
+  }else{
+    return false
+  }
+}
 
 
 </script>
