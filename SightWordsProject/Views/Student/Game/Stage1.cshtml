@@ -18,7 +18,7 @@ body {
   height: 120px;
   width: 120px;
   flex-shrink: 0;
-  
+  background-color: white;
   border-radius: 50%;
   border-style: solid;
   border-width: thick;
@@ -138,7 +138,7 @@ body {
   cursor: pointer;
 }
 
-.project.is-expanded > .project-img { border-radius: 0; }
+.project.is-expanded > .project-img { border-radius: 50%; }
 .project.is-expanded > .project-name { display: none; }
 
 .showcase {
@@ -147,15 +147,20 @@ body {
   justify-content: space-evenly;
   align-items: center;
   display: flex;
+  background-image: url("/img/field.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+/*
+expanding css
 .showcase.is-preview > .project {
   pointer-events: none;
   opacity: 0;
   width: 0;
   height: 0;
   margin: 0;
-  border-style: dotted;
 }
 
 .showcase.is-preview > .project.is-expanded {
@@ -167,6 +172,8 @@ body {
   transform: none !important;
   z-index: 2;
 }
+*/
+
 
 .centered {
   position: absolute;
@@ -198,7 +205,7 @@ body {
 
 <div class="showcase">
   <div class="header-project">
-    <img class="speaker" src="~/img/rock.png">
+    <img class="speaker" src="/img/rock.png">
     <!--Make .speaker able to say word when clicked-->
   </div>
   <div class="score-project">
@@ -226,7 +233,7 @@ body {
   </div>
   
   <div class="drop">
-    <img style="height:100%" src="~/img/basket.png">
+    <img style="height:100%" src="/img/basket.png">
   </div>
   
 </div>
