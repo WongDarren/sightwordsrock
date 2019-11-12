@@ -2,24 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
-<section id="cover">
-    <div id="cover-caption">
-        <div id="container" class="container">
-            <div class="row text-white">
-                <div class="col-md-6 offset-md-3 text-center">
-                    <h1>Welcome to</h1>
-                    <h1 id="title">Sight Words Rock</h1>
-                    <div class="justify-content-center">
-                        <a role="button" asp-area="" asp-controller="Teacher" asp-action="TeacherLogin" class="btn btn-primary btn-lg">
-                            Teachers
-                        </a>
-                        <a role="button" asp-area="" asp-controller="Student" asp-action="StudentLogin" class="btn btn-primary btn-lg">
-                            Students
-                        </a> 
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+<section class="cover1">
+    <div id="landingHeader">
+        <img id="headerLogo" src="../img/rock.png">
+        <span id="headerTitle">Sight Words Rock</span>
+        <a id="headerTeacherBut" role="button" asp-area="" asp-controller="Teacher" asp-action="TeacherLogin" class="btn btn-info btn-small">
+            Teachers
+        </a>
+    </div>
+    <div id="landingMain">
+        <h1 style="color:white;">Hey students, <a asp-area="" asp-controller="Student" asp-action="StudentLogin">click me!</a></h1>
+        <br/>
+        <a asp-area="" asp-controller="Student" asp-action="StudentLogin"><img id="landingLogo" src="../img/rock.png"></a>                   
     </div>
 
 </section>
