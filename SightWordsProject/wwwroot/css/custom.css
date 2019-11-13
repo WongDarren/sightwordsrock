@@ -64,6 +64,13 @@ main {
   height: 100%;
 }
 
+.cover2 {
+  background: url(../img/background_orange_poka.png);
+  background-repeat: repeat;
+  height: 100%;
+  z-index: -1;
+}
+
 #loginStyle {
   background: #222;
   text-align: center;
@@ -131,7 +138,7 @@ div.card {
   font-size: 30px;
 }
 
-#headerTeacherBut{
+#headerRightAlign{
   float: right;
 }
 
@@ -145,4 +152,8 @@ div.card {
 #landingMain a {
   color: white;
   text-decoration: none;
+}
+
+#hi{
+  color: white;
 }
