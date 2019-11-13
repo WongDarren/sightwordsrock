@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {}
+    "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {}
   },
   "projects": {
-    "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {
+    "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+        "projectUniqueName": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
         "projectName": "SightWordsProject",
-        "projectPath": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
-        "packagesPath": "/Users/darrenwong/.nuget/packages/",
-        "outputPath": "/Users/darrenwong/Desktop/repos/seniorprojectfall2019team9/SightWordsProject/obj/",
-=======
-    "/Users/r08mbp/Documents/SeniorProjectTeam9/SightWordsProject/SightWordsProject.csproj": {}
-  },
-  "projects": {
-    "/Users/r08mbp/Documents/SeniorProjectTeam9/SightWordsProject/SightWordsProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/r08mbp/Documents/SeniorProjectTeam9/SightWordsProject/SightWordsProject.csproj",
-        "projectName": "SightWordsProject",
-        "projectPath": "/Users/r08mbp/Documents/SeniorProjectTeam9/SightWordsProject/SightWordsProject.csproj",
-        "packagesPath": "/Users/r08mbp/.nuget/packages/",
-        "outputPath": "/Users/r08mbp/Documents/SeniorProjectTeam9/SightWordsProject/obj/",
->>>>>>> 561376beaffd03dc0c7151ce8654f2d202ccd036
+        "projectPath": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/SightWordsProject.csproj",
+        "packagesPath": "/Users/movleafen/.nuget/packages/",
+        "outputPath": "/Users/movleafen/seniorprojectfall2019team9/SightWordsProject/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "/Users/darrenwong/.nuget/NuGet/NuGet.Config"
-=======
-          "/Users/r08mbp/.nuget/NuGet/NuGet.Config"
->>>>>>> 561376beaffd03dc0c7151ce8654f2d202ccd036
+          "/Users/movleafen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -88,10 +70,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

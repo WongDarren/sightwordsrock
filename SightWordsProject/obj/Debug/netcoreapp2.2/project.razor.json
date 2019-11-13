@@ -2971,6 +2971,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Teacher/ForgotPassword.cshtml",
+      "TargetPath": "Views/Teacher/ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Teacher/TeacherLogin.cshtml",
       "TargetPath": "Views/Teacher/TeacherLogin.cshtml",
       "FileKind": "mvc"
@@ -3063,6 +3068,11 @@
     {
       "FilePath": "Views/Student/StudentStage1.cshtml",
       "TargetPath": "Views/Student/StudentStage1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Student/ForgotPassword.cshtml",
+      "TargetPath": "Views/Student/ForgotPassword.cshtml",
       "FileKind": "mvc"
     },
     {

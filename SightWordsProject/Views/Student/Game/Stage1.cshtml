@@ -239,6 +239,8 @@ expanding css
 </div>
 
 <script>
+var msg = new SpeechSynthesisUtterance('Hello World');
+
 const projects = document.querySelectorAll(".project");
 const drop = document.querySelector(".drop");
 const showcase = document.querySelector(".showcase");
@@ -365,6 +367,8 @@ document.addEventListener("touchmove", e => {
 
 drop.addEventListener("mouseout", () => {
   if (expanded) {
+    window.speechSynthesis.speak(msg);
+
     dropped = false;
     target.style.transform = "none";
     stopped();
