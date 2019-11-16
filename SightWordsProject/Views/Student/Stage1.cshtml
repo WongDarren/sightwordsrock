@@ -212,27 +212,27 @@ expanding css
     <!--Make .speaker able to say word when clicked-->
   </div>
   <div class="score-project">
-    <h2 id="myScore">My score: 0</h2>
+    <h2 id="myScore">My Score: 0</h2>
   </div>
   <div class="project">
     <img class="project-img">
       <div class="centered"><h4 id = "box1">1st word<h4></div>
-    <span class="project-name">The Catcher in the Rye </span>
+    <span class="project-name">Drag to the Basket!</span>
   </div>
   <div class="project">
     <img class="project-img">
       <div class="centered"><h4 id = "box2">2nd word<h4></div>
-    <span class="project-name">The Catcher in the Rye</span>
+    <span class="project-name">Drag to the Basket!</span>
   </div>
   <div class="project">
     <img class="project-img">
       <div class="centered"><h4 id = "box3">3rd word<h4></div>
-    <span class="project-name">The Catcher in the Rye</span>
+    <span class="project-name">Drag to the Basket!</span>
   </div>
   <div class="project">
     <img class="project-img">
       <div class="centered"><h4 id = "box4">4th word<h4></div>
-    <span class="project-name">The Catcher in the Rye</span>
+    <span class="project-name">Drag to the Basket!</span>
   </div>
   
   <div class="drop">
@@ -379,7 +379,7 @@ drop.addEventListener("mouseout", () => {
 });
 
 function score(){
-  document.getElementById("myScore").innerHTML = "My score: " + i;
+  document.getElementById("myScore").innerHTML = "My Score: " + i;
 }
 function shuffle(a) {
     var j, x, i;
@@ -398,7 +398,7 @@ function wordGenerator(){
     document.getElementById("box4").innerHTML = words[j+3];
     j=j+4;
     if(j > words.length){
-      alert("Run out of words!");
+      alert("No more words to use!");
     }
 }
 function validatedWord(dbWord, chosen){
