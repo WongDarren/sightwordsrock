@@ -3071,6 +3071,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Student/ForgotPassword.cshtml",
+      "TargetPath": "Views/Student/ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Shared/Error.cshtml",
       "TargetPath": "Views/Shared/Error.cshtml",
       "FileKind": "mvc"
