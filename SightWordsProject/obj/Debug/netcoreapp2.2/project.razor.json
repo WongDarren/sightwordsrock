@@ -3001,11 +3001,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/Game/Stage1.cshtml",
-      "TargetPath": "Views/Student/Game/Stage1.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views/Teacher/ManageAccount.cshtml",
       "TargetPath": "Views/Teacher/ManageAccount.cshtml",
       "FileKind": "mvc"
@@ -3046,6 +3041,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Student/Stage1.cshtml",
+      "TargetPath": "Views/Student/Stage1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Teacher/Modules.cshtml",
       "TargetPath": "Views/Teacher/Modules.cshtml",
       "FileKind": "mvc"
@@ -3061,13 +3061,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/StudentStage1.cshtml",
-      "TargetPath": "Views/Student/StudentStage1.cshtml",
+      "FilePath": "Views/Student/Game/Stage2.cshtml",
+      "TargetPath": "Views/Student/Game/Stage2.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Student/ForgotPassword.cshtml",
-      "TargetPath": "Views/Student/ForgotPassword.cshtml",
+      "FilePath": "Views/Student/StudentStage1.cshtml",
+      "TargetPath": "Views/Student/StudentStage1.cshtml",
       "FileKind": "mvc"
     },
     {

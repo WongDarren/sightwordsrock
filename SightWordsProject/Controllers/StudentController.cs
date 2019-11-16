@@ -19,6 +19,8 @@ namespace SightWordsProject.Controllers
         private readonly IConfiguration configuration;
         private string connectionString;
         DbContextOptionsBuilder<AppDbContext> optionsBuilder;
+        private Task<ApplicationUser> GetCurrentUserAsync() => userManager.GetUserAsync(HttpContext.User);
+
         public StudentController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
         {
             configuration = config;
@@ -57,17 +59,49 @@ namespace SightWordsProject.Controllers
             }
             return View(model);
         }
-        public IActionResult StudentDashboard()
+        [HttpGet]
+        public async Task<IActionResult> StudentDashboard()
         {
-            return View();
+            var user = await GetCurrentUserAsync();
+
+            var model = new StudentDashboard()
+            {
+                Id = user.Id,
+                Gradelevel = user.GradeLevel,
+                Modules = 10,
+                ModuleNumber = 0
+            };
+            return View(model);
         }
-        public IActionResult Stages()
+        [HttpGet]
+        public async Task<IActionResult> StudentStages(int id)
         {
-            return View("Views/Student/StudentStages.cshtml");
+            var user = await GetCurrentUserAsync();
+
+            var model = new Module()
+            {
+                moduleNumber = id
+            };
+
+            return View(model);
         }
-        public IActionResult StageGame()
+        public async Task<IActionResult> Stage1(int id)
         {
-            return View("Views/Student/Game/Stage1.cshtml");
+            var user = await GetCurrentUserAsync();
+            AppDbContext context = new AppDbContext(optionsBuilder.Options);
+            var teacher = context.TeacherLogin.Single(x => x.StudentCode == user.StudentCode && x.UserType == "teacher");
+            var words = context.WordsList.Where(x => x.GradeLevel == teacher.GradeLevel && x.ModuleNumber == id).ToList();
+            List<Game> model = new List<Game>();
+
+            foreach(var word in words)
+            {
+                var item = new Game
+                {
+                    Words = word.Word
+                };
+                model.Add(item);
+            }
+            return View(model);
         }
         public IActionResult StageGame2()
         {
