@@ -207,7 +207,7 @@ expanding css
 
 <div class="showcase">
   <div class="header-project">
-    <img class="speaker" src="/img/rock.png">
+    <img class="speaker" src="/img/rock.png" onclick=window.speechSynthesis.speak(msg2)>
     
     <!--Make .speaker able to say word when clicked-->
   </div>
@@ -243,6 +243,7 @@ expanding css
 
 <script>
 var msg = new SpeechSynthesisUtterance('Hello World');
+var msg2 = new SpeechSynthesisUtterance('I am a rock');
 
 const projects = document.querySelectorAll(".project");
 const drop = document.querySelector(".drop");
