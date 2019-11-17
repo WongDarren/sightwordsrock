@@ -7,8 +7,8 @@
 <section class="cover1">
   <div id="landingHeader">
     <img id="headerLogo" src="../img/rock.png">
-    <span id="headerTitle">Sight Words Rock</span>
-    <a role="button" id="headerRightAlign" asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-info btn-md">
+    <span id="headerTitleStudent">Sight Words Rock</span>
+    <a role="button" id="headerRightAlign" asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-info btn-md" style="border-color:#F9BA45; background-color:#F9BA45">
       Go Back
     </a>
   </div>
@@ -16,8 +16,10 @@
     <div class="container">
       <div class="row text-white">
         <div style="background: rgba(255,255,255, .1); box-shadow: 0px 16px 40px rgba(0,0,0,0.23); padding: 20px 20px; margin: 7vh auto; max-width: 360px" class="col-md-6 offset-md-3 text-center">
-          <h2>Welcome, Student!</h2>
-          <h3>Please sign in:</h3><br>
+          <span class="orange shadowWhite"> 
+            <h2>Welcome, Student!</h2>
+            <h3>Please sign in:</h3><br>
+          </span>
           <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
@@ -40,13 +42,13 @@
             <br>
             <input class="form-control form-control-lg" type="text" placeholder="Student ID Number">
             <br> -->
-            <button type="submit" class="btn btn-info btn-lg">Login</button>
+            <button type="submit" class="btn btn-info btn-lg" style="border-color:#F9BA45; background-color:#F9BA45">Login</button>
             <br>
             <br>
-            <span class="psw"><a asp-area="" asp-controller="Student" asp-action="ForgotPassword">Forgot Password?</a></span>
+            <span class="psw"><a asp-area="" asp-controller="Student" asp-action="ForgotPassword" style="color:white;">Forgot Password?</a></span>
             <br>
             <br>
-            <a role="button" class="btn btn-info btn-lg" asp-area="" asp-controller="Student" asp-action="CreateAccount">
+            <a role="button" class="btn btn-info btn-lg" asp-area="" asp-controller="Student" asp-action="CreateAccount" style="border-color:#F9BA45; background-color:#F9BA45">
               Create Account
             </a> 
             <br>
