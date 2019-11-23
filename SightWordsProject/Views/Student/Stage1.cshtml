@@ -251,7 +251,12 @@ const showcase = document.querySelector(".showcase");
 
 // The array of words should be passed here
 var j = 0;
-var words = ["a", "b", "c", "d", "e", "f", "g", "h",];
+var model = @Html.Raw(Json.Serialize(Model));
+debugger;
+var words = [];
+for (i=0;i<model.length;i++) {
+  words.push(model[i].words);
+}
 var chosen = ["a, c, g"];
 shuffle(words);
 wordGenerator();
@@ -409,6 +414,7 @@ function validatedWord(dbWord, chosen){
     return false
   }
 }
+
 
 
 </script>
