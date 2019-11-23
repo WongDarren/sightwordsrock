@@ -216,22 +216,22 @@ expanding css
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered"><h4 id = "box1">1st word<h4></div>
+      <div class="centered"><h4 id = "box1">1st word</h4></div>
     <span class="project-name">Drag to the Basket!</span>
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered"><h4 id = "box2">2nd word<h4></div>
+      <div class="centered"><h4 id = "box2">2nd word</h4></div>
     <span class="project-name">Drag to the Basket!</span>
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered"><h4 id = "box3">3rd word<h4></div>
+      <div class="centered"><h4 id = "box3">3rd word</h4></div>
     <span class="project-name">Drag to the Basket!</span>
   </div>
   <div class="project">
     <img class="project-img">
-      <div class="centered"><h4 id = "box4">4th word<h4></div>
+      <div class="centered"><h4 id = "box4">4th word</h4></div>
     <span class="project-name">Drag to the Basket!</span>
   </div>
   
@@ -250,20 +250,20 @@ const drop = document.querySelector(".drop");
 const showcase = document.querySelector(".showcase");
 
 // The array of words should be passed here
+// j for array only
 var j = 0;
 var model = @Html.Raw(Json.Serialize(Model));
-debugger;
 var words = [];
 for (i=0;i<model.length;i++) {
   words.push(model[i].words);
 }
-var chosen = ["a, c, g"];
+var answer;
 shuffle(words);
 wordGenerator();
 
 // wordGenerator() change words from id=box1 to box4
-
-var i = 0;
+// i for graphical container
+var score = 0;
 let start,
   offsetY,
   offsetX,
@@ -285,9 +285,15 @@ const stopped = () => {
     target.classList.add("is-expanded");
     drop.classList.add("is-dropped");
     expanded = true;
+
+    console.log(getProjectName(target));
+    console.log("projectName", getProjectName(target));
+    console.log(answer);
+    if(getProjectName(target) === answer){
+      score_f();
+    }
     wordGenerator();
-    //validatedWord();
-    score();
+    
   } else {
     drop.classList.remove("is-dropped");
     showcase.classList.remove("is-preview");
@@ -376,16 +382,16 @@ document.addEventListener("touchmove", e => {
 
 drop.addEventListener("mouseout", () => {
   if (expanded) {
-    window.speechSynthesis.speak(msg);
-
+    //window.speechSynthesis.speak(msg);
     dropped = false;
     target.style.transform = "none";
     stopped();
   }
 });
 
-function score(){
-  document.getElementById("myScore").innerHTML = "My Score: " + i;
+function score_f(){
+  score = score + 1;
+  document.getElementById("myScore").innerHTML = "My Score: " + score;
 }
 function shuffle(a) {
     var j, x, i;
@@ -398,6 +404,10 @@ function shuffle(a) {
     return a;
 }
 function wordGenerator(){
+    var arrTmp = [words[j], words[j+1], words[j+2], words[j+3]];
+    answer = arrTmp[Math.floor(Math.random()*arrTmp.length)];
+    msg2 = new SpeechSynthesisUtterance(answer);
+
     document.getElementById("box1").innerHTML = words[j];
     document.getElementById("box2").innerHTML = words[j+1];
     document.getElementById("box3").innerHTML = words[j+2];
@@ -407,13 +417,8 @@ function wordGenerator(){
       alert("No more words to use!");
     }
 }
-function validatedWord(dbWord, chosen){
-  if (dbword === chosen){
-    return true;
-  }else{
-    return false
-  }
-}
+
+getProjectName = target => target.querySelector('h4').textContent;
 
 
 
