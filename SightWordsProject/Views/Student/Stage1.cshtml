@@ -251,12 +251,14 @@ const showcase = document.querySelector(".showcase");
 
 // The array of words should be passed here
 // j for array only
+var x = 0;
 var j = 0;
 var model = @Html.Raw(Json.Serialize(Model));
 var words = [];
 for (i=0;i<model.length;i++) {
   words.push(model[i].words);
 }
+var tmpWords = words;
 var answer;
 shuffle(words);
 wordGenerator();
@@ -404,18 +406,47 @@ function shuffle(a) {
     return a;
 }
 function wordGenerator(){
-    var arrTmp = [words[j], words[j+1], words[j+2], words[j+3]];
-    answer = arrTmp[Math.floor(Math.random()*arrTmp.length)];
+
+    answer = tmpWords[x];
+    var arr= [];
+    for (i=0;i < words.length; i++)
+    {
+      if (answer != words[i])
+      {
+        arr.push(words[i]);
+        //arr = words[i];
+      }
+    }
+    var result = getRandom(arr,3);
+    result.push(answer);
+    shuffle(result);
+    //var arrTmp = [words[j], words[j+1], words[j+2], words[j+3]];
+    //answer = arrTmp[Math.floor(Math.random()*arrTmp.length)];
     msg2 = new SpeechSynthesisUtterance(answer);
 
-    document.getElementById("box1").innerHTML = words[j];
-    document.getElementById("box2").innerHTML = words[j+1];
-    document.getElementById("box3").innerHTML = words[j+2];
-    document.getElementById("box4").innerHTML = words[j+3];
-    j=j+4;
-    if(j > words.length){
+    document.getElementById("box1").innerHTML = result[0];
+    document.getElementById("box2").innerHTML = result[1];
+    document.getElementById("box3").innerHTML = result[2];
+    document.getElementById("box4").innerHTML = result[3];
+    x=x+1;
+    //j=j+4;
+    if(x > words.length){
       alert("No more words to use!");
     }
+}
+
+function getRandom(arr, n) {
+    var result = new Array(n),
+        len = arr.length,
+        taken = new Array(len);
+    if (n > len)
+        throw new RangeError("getRandom: more elements taken than available");
+    while (n--) {
+        var x = Math.floor(Math.random() * len);
+        result[n] = arr[x in taken ? taken[x] : x];
+        taken[x] = --len in taken ? taken[len] : len;
+    }
+    return result;
 }
 
 getProjectName = target => target.querySelector('h4').textContent;
