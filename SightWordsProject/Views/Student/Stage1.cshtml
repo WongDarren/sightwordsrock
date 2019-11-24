@@ -111,8 +111,8 @@ body {
   position: fixed;
   bottom: 20px;
   left: calc(50% - 45px);
-  width: 110px;
-  height: 110px;
+  width: 150px;
+  height: 150px;
   color: darken(#ddd, 15%);
   border-radius: 50%;
   transition: .5s;
@@ -227,6 +227,10 @@ expanding css
   width: 80%;
 }
 
+.rockGrad {
+  height: 100px;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -248,7 +252,7 @@ expanding css
 
 <div class="showcase">
   <div class="header-project">
-    <img class="speaker" src="/img/rock.png" onclick=window.speechSynthesis.speak(msg2)>
+    <img class="speaker" src="/img/rockHappy.png" onclick=window.speechSynthesis.speak(msg2)>
     
     <!--Make .speaker able to say word when clicked-->
   </div>
@@ -283,16 +287,18 @@ expanding css
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>congratulation!</h2>
+  <div class="modal-content text-center">
+    <div class="modal-header" style="margin:0 auto">
+      <h2>Congratulations!</h2>
     </div>
     <div class="modal-body">
-      <p>You won!</p>
-      <p>your score is 10/10</p>
+      <img class="rockGrad mb-2" src="/img/rockGrad.png">
+      <p>You made it!</p>
+      <p>TODO: get score here</p>
     </div>
     <div class="modal-footer">
-      <button type="button" onclick="">Click Me!</button>
+      <!--TODO: Need to redirect the student back when they finish the game-->
+      <button type="button" class="btn btn-success" style="margin:0 auto" onclick="">Click Me!</button>
     </div>
   </div>
 
