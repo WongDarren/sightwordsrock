@@ -47,6 +47,11 @@ body {
   position: fixed;
   top: 20px;
   height: 150px;
+  user-select: none;
+}
+
+.header-project:hover {
+  transform: scale(1.1);
 }
 
 .score-project {
@@ -327,6 +332,8 @@ var tmpWords = words;
 var answer;
 shuffle(words);
 wordGenerator();
+// initial audio playback of current word
+window.speechSynthesis.speak(msg2);
 
 // wordGenerator() change words from id=box1 to box4
 // i for graphical container
@@ -360,6 +367,10 @@ const stopped = () => {
       score_f();
     }
     wordGenerator();
+    // automatic playback of current word
+    if(score < 10) {
+      window.speechSynthesis.speak(msg2);
+    }
     
   } else {
     drop.classList.remove("is-dropped");
