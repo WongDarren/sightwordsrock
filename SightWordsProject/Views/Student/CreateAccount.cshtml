@@ -3,8 +3,8 @@
 <section class="cover1HeightAuto">
   <div id="landingHeader">
     <img id="headerLogo" src="../img/rock.png">
-    <span id="headerTitleStudent">Sight Words Rock</span>
-    <a role="button" id="headerRightAlign" asp-area="" asp-controller="Student" asp-action="StudentLogin" class="btn btn-info btn-md" style="border-color:#F9BA45; background-color:#F9BA45">
+    <span id="headerTitle">Sight Words Rock</span>
+    <a role="button" id="headerRightAlign" asp-area="" asp-controller="Student" asp-action="StudentLogin" class="btn btn-info btn-md">
       Student Login
     </a>
   </div>
@@ -50,7 +50,7 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label style="text-align:right;" class="col-sm-4 col-form-label form-control-label">Email Address</label>
+                  <label style="text-align:right;" class="col-sm-4 col-form-label form-control-label">Parent Email Address</label>
                   <div class="col-sm-8">
                     <input asp-for="Email" class="form-control form-control-lg" placeholder="Email">
                     <span asp-validation-for="Email" class="text-danger"></span>
@@ -72,7 +72,7 @@
                 </div>
               </div>
               <a asp-controller="" asp-action="">
-                <button style="border-color:#F9BA45; background-color:#F9BA45;text-align: center;" type="submit" class="btn btn-info btn-lg">Register</button>
+                <button type="submit" class="btn btn-info btn-lg">Register</button>
               </a>
           </form>
         </div>
