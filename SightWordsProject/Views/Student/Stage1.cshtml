@@ -72,17 +72,6 @@ body {
   user-select: none;
 }
 
-#gameProgress {
-  position: fixed;
-  color: white;
-  transition: .5s;
-  text-align: left;
-  display: flex;
-  font-size: 40px;
-  bottom: 1%;
-  left: 1%;
-}
-
 .project-name {
   position: absolute;
   width: 140px;
@@ -275,9 +264,6 @@ expanding css
   <div class="score-project">
     <h2 id="myScore">My Score: 0</h2>
   </div>
-  <div style="height: 200px;" class="score-project">
-    <h2 id="myIncorrect">Incorrect: 0</h2>
-  </div>
   <div class="project">
     <img class="project-img">
       <div class="centered"><h4 id = "box1">1st word</h4></div>
@@ -302,11 +288,6 @@ expanding css
   <div class="drop">
     <img style="height:100%" src="/img/basket.png">
   </div>
-
-
-  <div>
-    <p id="gameProgress">Progress: 0/20</p>
-  </div>
   <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -318,18 +299,17 @@ expanding css
     <div class="modal-body">
       <img class="rockGrad mb-2" src="/img/rockGrad.png">
       <p>You made it!</p>
-      <p id="finalScore">Score:</p>
+      <p>TODO: get score here</p>
     </div>
     <div class="modal-footer">
 
-      <a role="button" class="btn btn-success" style="margin:0 auto" asp-controller="Student" asp-action="StudentDashboard">Return to Dashboard</a>
+      <a role="button" class="btn btn-success" style="margin:0 auto" asp-controller="Student" asp-action="StudentDashboard">Click Me!</a>
     </div>
   </div>
 
 </div>
   
 </div>
-
 
 <script>
 var msg = new SpeechSynthesisUtterance('Hello World');
@@ -357,9 +337,7 @@ window.speechSynthesis.speak(msg2);
 
 // wordGenerator() change words from id=box1 to box4
 // i for graphical container
-let progress = 0;
-let score = 0;
-let incorrect = 0;
+var score = 0;
 let start,
   offsetY,
   offsetX,
@@ -385,14 +363,15 @@ const stopped = () => {
     console.log(getProjectName(target));
     console.log("projectName", getProjectName(target));
     console.log(answer);
-
-    getProjectName(target) === answer ? score_f() : incorrect_f();
-    incrementProgress();
+    if(getProjectName(target) === answer){
+      score_f();
+    }
     wordGenerator();
-    // initial audio playback of current word
-    if(score + incorrect < 20){
+    // automatic playback of current word
+    if(score < 10) {
       window.speechSynthesis.speak(msg2);
     }
+    
   } else {
     drop.classList.remove("is-dropped");
     showcase.classList.remove("is-preview");
@@ -492,12 +471,6 @@ function score_f(){
   score = score + 1;
   document.getElementById("myScore").innerHTML = "My Score: " + score;
 }
-
-function incorrect_f(){
-  incorrect++;
-  document.getElementById("myIncorrect").innerHTML = "Incorrect: " + incorrect;
-}
-
 function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
@@ -534,18 +507,8 @@ function wordGenerator(){
     x=x+1;
     //j=j+4;
     if(x > words.length){
-      getModal();
+      modal.style.display = "block";
     }
-}
-
-function getModal() {
-  modal.style.display = "block";
-  document.getElementById("finalScore").innerHTML = "Score: " + score + "/20";
-}
-
-function incrementProgress() {
-  progress++;
-  document.getElementById("gameProgress").innerHTML = "Progress: " + progress + "/20";
 }
 
 function getRandom(arr, n) {
