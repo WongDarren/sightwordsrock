@@ -79,6 +79,7 @@ main {
 .cover2HeightAuto {
   background: url(../img/background_orange_poka.png);
   background-repeat: repeat;
+  min-height: 100%;
   height: auto;
   z-index: -1;
 }
@@ -288,6 +289,7 @@ div.card {
 }
 
 .textShadowTeal{
+  color: white;
   font-family: 'Century Gothic Bold';
   text-shadow: 1px 1px 0 #297E89,
     -1px 1px 0 #297E89,
