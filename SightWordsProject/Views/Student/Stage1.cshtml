@@ -305,7 +305,7 @@ expanding css
 
 
   <div>
-    <p id="gameProgress">Progress: 0/10</p>
+    <p id="gameProgress">Progress: 0/20</p>
   </div>
   <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -390,7 +390,7 @@ const stopped = () => {
     incrementProgress();
     wordGenerator();
     // initial audio playback of current word
-    if(score + incorrect < 10){
+    if(score + incorrect < 20){
       window.speechSynthesis.speak(msg2);
     }
   } else {
@@ -540,12 +540,12 @@ function wordGenerator(){
 
 function getModal() {
   modal.style.display = "block";
-  document.getElementById("finalScore").innerHTML = "Score: " + score + "0%";
+  document.getElementById("finalScore").innerHTML = "Score: " + score + "/20";
 }
 
 function incrementProgress() {
   progress++;
-  document.getElementById("gameProgress").innerHTML = "Progress: " + progress + "/10";
+  document.getElementById("gameProgress").innerHTML = "Progress: " + progress + "/20";
 }
 
 function getRandom(arr, n) {
