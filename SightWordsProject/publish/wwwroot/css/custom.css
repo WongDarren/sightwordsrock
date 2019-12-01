@@ -30,7 +30,6 @@
   font-weight: normal;
   src: local('Century Gothic Bold Italic'), url('fonts/GOTHICBI.woff') format('woff');
 }
-
 /*************** CUSTOM STYLES ***************/
 html {
  height: 100%;
@@ -64,10 +63,24 @@ main {
   height: 100%;
 }
 
+.cover1HeightAuto {
+  background: url(../img/background_green_poka.png);
+  background-repeat: repeat;
+  height: auto;
+}
+
 .cover2 {
   background: url(../img/background_orange_poka.png);
   background-repeat: repeat;
   height: 100%;
+  z-index: -1;
+}
+
+.cover2HeightAuto {
+  background: url(../img/background_orange_poka.png);
+  background-repeat: repeat;
+  min-height: 100%;
+  height: auto;
   z-index: -1;
 }
 
@@ -85,7 +98,7 @@ main {
 }
 
 #landingHeader {
-  padding: 1% 1% 0 1%;
+  margin: 10px;
   color: white;
   display: inline-block;
 }
@@ -110,7 +123,7 @@ main {
 }
 
 .modules_row {
-  margin-bottom: 10px;
+  margin: 0px 10px 10px 10px;
 }
 
 div.card {
@@ -134,8 +147,64 @@ div.card {
 }
 
 #headerTitle{
+  color: white;
   padding-left: 5px;
   font-size: 30px;
+  font-family: 'Century Gothic Bold';
+  text-shadow: 1px 1px 0 #297E89,
+    -1px 1px 0 #297E89,
+    1px -1px 0 #297E89,
+    -1px -1px 0 #297E89,
+    0px 1px 0 #297E89,
+    0px -1px 0 #297E89,
+    -1px 0px 0 #297E89,
+    1px 0px 0 #297E89,
+    2px 2px 0 #297E89,
+    -2px 2px 0 #297E89,
+    2px -2px 0 #297E89,
+    -2px -2px 0 #297E89,
+    0px 2px 0 #297E89,
+    0px -2px 0 #297E89,
+    -2px 0px 0 #297E89,
+    2px 0px 0 #297E89,
+    1px 2px 0 #297E89,
+    -1px 2px 0 #297E89,
+    1px -2px 0 #297E89,
+    -1px -2px 0 #297E89,
+    2px 1px 0 #297E89,
+    -2px 1px 0 #297E89,
+    2px -1px 0 #297E89,
+    -2px -1px 0 #297E89;
+}
+
+#headerTitleStudent{
+  padding-left: 5px;
+  font-size: 30px;
+  font-family: 'Century Gothic Bold';
+  text-shadow: 1px 1px 0 #F9BA45,
+    -1px 1px 0 #F9BA45,
+    1px -1px 0 #F9BA45,
+    -1px -1px 0 #F9BA45,
+    0px 1px 0 #F9BA45,
+    0px -1px 0 #F9BA45,
+    -1px 0px 0 #F9BA45,
+    1px 0px 0 #F9BA45,
+    2px 2px 0 #F9BA45,
+    -2px 2px 0 #F9BA45,
+    2px -2px 0 #F9BA45,
+    -2px -2px 0 #F9BA45,
+    0px 2px 0 #F9BA45,
+    0px -2px 0 #F9BA45,
+    -2px 0px 0 #F9BA45,
+    2px 0px 0 #F9BA45,
+    1px 2px 0 #F9BA45,
+    -1px 2px 0 #F9BA45,
+    1px -2px 0 #F9BA45,
+    -1px -2px 0 #F9BA45,
+    2px 1px 0 #F9BA45,
+    -2px 1px 0 #F9BA45,
+    2px -1px 0 #F9BA45,
+    -2px -1px 0 #F9BA45;
 }
 
 #headerRightAlign{
@@ -154,6 +223,126 @@ div.card {
   text-decoration: none;
 }
 
-#hi{
+.teal {
+  color: #297E89;
+  font-family: 'Century Gothic Bold';
+}
+
+.orange {
+  color: #F9BA45;
+  font-family: 'Century Gothic Bold';
+}
+
+.textShadowOrange {
+  font-family: 'Century Gothic Bold';
+  text-shadow: 1px 1px 0 #F9BA45,
+    -1px 1px 0 #F9BA45,
+    1px -1px 0 #F9BA45,
+    -1px -1px 0 #F9BA45,
+    0px 1px 0 #F9BA45,
+    0px -1px 0 #F9BA45,
+    -1px 0px 0 #F9BA45,
+    1px 0px 0 #F9BA45,
+    2px 2px 0 #F9BA45,
+    -2px 2px 0 #F9BA45,
+    2px -2px 0 #F9BA45,
+    -2px -2px 0 #F9BA45,
+    0px 2px 0 #F9BA45,
+    0px -2px 0 #F9BA45,
+    -2px 0px 0 #F9BA45,
+    2px 0px 0 #F9BA45,
+    1px 2px 0 #F9BA45,
+    -1px 2px 0 #F9BA45,
+    1px -2px 0 #F9BA45,
+    -1px -2px 0 #F9BA45,
+    2px 1px 0 #F9BA45,
+    -2px 1px 0 #F9BA45,
+    2px -1px 0 #F9BA45,
+    -2px -1px 0 #F9BA45;
+}
+
+.shadowWhite {
+  text-shadow: 1px 1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #FFF,
+    -1px -1px 0 #FFF,
+    0px 1px 0 #FFF,
+    0px -1px 0 #FFF,
+    -1px 0px 0 #FFF,
+    1px 0px 0 #FFF,
+    2px 2px 0 #FFF,
+    -2px 2px 0 #FFF,
+    2px -2px 0 #FFF,
+    -2px -2px 0 #FFF,
+    0px 2px 0 #FFF,
+    0px -2px 0 #FFF,
+    -2px 0px 0 #FFF,
+    2px 0px 0 #FFF,
+    1px 2px 0 #FFF,
+    -1px 2px 0 #FFF,
+    1px -2px 0 #FFF,
+    -1px -2px 0 #FFF,
+    2px 1px 0 #FFF,
+    -2px 1px 0 #FFF,
+    2px -1px 0 #FFF,
+    -2px -1px 0 #FFF;
+}
+
+.textShadowTeal{
   color: white;
+  font-family: 'Century Gothic Bold';
+  text-shadow: 1px 1px 0 #297E89,
+    -1px 1px 0 #297E89,
+    1px -1px 0 #297e89,
+    -1px -1px 0 #297E89,
+    0px 1px 0 #297E89,
+    0px -1px 0 #297E89,
+    -1px 0px 0 #297E89,
+    1px 0px 0 #297E89,
+    2px 2px 0 #297E89,
+    -2px 2px 0 #297E89,
+    2px -2px 0 #297E89,
+    -2px -2px 0 #297E89,
+    0px 2px 0 #297E89,
+    0px -2px 0 #297E89,
+    -2px 0px 0 #297E89,
+    2px 0px 0 #297E89,
+    1px 2px 0 #297E89,
+    -1px 2px 0 #297E89,
+    1px -2px 0 #297E89,
+    -1px -2px 0 #297E89,
+    2px 1px 0 #297E89,
+    -2px 1px 0 #297E89,
+    2px -1px 0 #297E89,
+    -2px -1px 0 #297E89;
+}
+
+/* 1px */
+.textShadowTeal1 {
+  color: white;
+  font-family: 'Century Gothic Bold';
+  text-shadow: 
+        -1px -1px 0px #297E89,
+         0px -1px 0px #297E89,
+         1px -1px 0px #297E89,
+        -1px  0px 0px #297E89,
+         1px  0px 0px #297E89,
+        -1px  1px 0px #297E89,
+         0px  1px 0px #297E89,
+         1px  1px 0px #297E89;
+}
+
+/* 1px */
+.textShadowOrange1 {
+  color: white;
+  font-family: 'Century Gothic Bold';
+  text-shadow: 
+        -1px -1px 0px #F9BA45,
+         0px -1px 0px #F9BA45,
+         1px -1px 0px #F9BA45,
+        -1px  0px 0px #F9BA45,
+         1px  0px 0px #F9BA45,
+        -1px  1px 0px #F9BA45,
+         0px  1px 0px #F9BA45,
+         1px  1px 0px #F9BA45;
 }
