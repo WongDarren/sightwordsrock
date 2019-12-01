@@ -43,6 +43,7 @@ namespace SightWordsProject
             // services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Server=tcp:sightwordsserver.database.windows.net,1433;Initial Catalog=SightWordsDatabase;Persist Security Info=False;User ID=team9;Password=sightwords#9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
 
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SightWordsProject.Models;
@@ -9,6 +11,8 @@ using SightWordsProject.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+//using MailKit.Net.Smtp;
+//using MimeKit;
 
 namespace SightWordsProject.Controllers
 {
@@ -20,7 +24,6 @@ namespace SightWordsProject.Controllers
         private string connectionString;
         DbContextOptionsBuilder<AppDbContext> optionsBuilder;
         private Task<ApplicationUser> GetCurrentUserAsync() => userManager.GetUserAsync(HttpContext.User);
-
 
 
         public TeacherController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
@@ -82,6 +85,33 @@ namespace SightWordsProject.Controllers
                 };
                 var result = await userManager.CreateAsync(user,model.Password);
 
+
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                MailMessage mailmsg = new MailMessage();
+
+                smtp.EnableSsl = true;
+                smtp.Credentials = new NetworkCredential("sightwordsrock@gmail.com","Sightwords1!");
+
+                mailmsg.From = new MailAddress("sightwordsrock@gmail.com");
+                mailmsg.To.Add(user.Email);
+
+                mailmsg.Body = "<h3> To sign into your account use the credentials you used to create an account. To add students to your class use the code: </h3>" + user.StudentCode;
+                mailmsg.Subject = "Account Created for Sight Words Rock";
+                mailmsg.IsBodyHtml = true;
+
+                mailmsg.Priority = MailPriority.High;
+
+                try
+                {
+                    smtp.Timeout = 500000;
+                    smtp.Send(mailmsg);
+                    mailmsg.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            
                 if(result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
