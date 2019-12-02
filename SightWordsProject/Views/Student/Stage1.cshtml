@@ -165,7 +165,24 @@ body {
   justify-content: space-evenly;
   align-items: center;
   display: flex;
+}
+
+.showcaseMorning {
+  background-image: url("/img/morning.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.showcaseEvening {
   background-image: url("/img/evening.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.showcaseNight {
+  background-image: url("/img/night.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -265,8 +282,7 @@ expanding css
 
 
 </style>
-
-<div class="showcase">
+<div style="visibility: hidden;" class="showcase">
   <div class="header-project">
     <img class="speaker" src="/img/rockHappy.png" onclick=window.speechSynthesis.speak(msg2)>
     
@@ -332,12 +348,28 @@ expanding css
 
 
 <script>
+var url = $(location).attr('href');
+var indexGame = url.charAt(url.length -1);
 var msg = new SpeechSynthesisUtterance('Hello World');
 var msg2 = new SpeechSynthesisUtterance('I am a rock');
 
 const projects = document.querySelectorAll(".project");
 const drop = document.querySelector(".drop");
 const showcase = document.querySelector(".showcase");
+
+// sets stage background on page load
+window.onload = function setBackground(){
+  if (indexGame >= 1 && indexGame < 4) {
+    // showcase.style.backgroundImage = "url('/img/evening.png')";
+    showcase.classList.add("showcaseMorning");
+  } else if (indexGame >= 4 && indexGame < 7){
+    showcase.classList.add("showcaseEvening");
+  } else {
+    showcase.classList.add("showcaseNight");
+  }
+  // to eliminate flash of unstyled content
+  showcase.style.visibility='visible';
+}
 
 // The array of words should be passed here
 // j for array only
@@ -352,8 +384,8 @@ var tmpWords = words;
 var answer;
 shuffle(words);
 wordGenerator();
-// initial audio playback of current word
-window.speechSynthesis.speak(msg2);
+// initial audio playback of current word with delay
+setTimeout(function(){window.speechSynthesis.speak(msg2);}, 700);
 
 // wordGenerator() change words from id=box1 to box4
 // i for graphical container
@@ -389,9 +421,9 @@ const stopped = () => {
     getProjectName(target) === answer ? score_f() : incorrect_f();
     incrementProgress();
     wordGenerator();
-    // initial audio playback of current word
+    // initial audio playback of current word with delay
     if(score + incorrect < 10){
-      window.speechSynthesis.speak(msg2);
+      setTimeout(function(){window.speechSynthesis.speak(msg2);}, 700);
     }
   } else {
     drop.classList.remove("is-dropped");
