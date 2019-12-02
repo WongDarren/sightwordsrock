@@ -49,7 +49,14 @@
       @for(var i = 1; i < (@Model.Modules + 1); i++) {
         <div class="col-sm-6 col-md-4">
           <div style="background: rgba(255,255,255, .1); box-shadow: 0px 16px 40px rgba(0,0,0,0.23); padding: 20px 20px 20px 20px; margin: 20px auto; max-width: 350px;" class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/150x100" alt="Card image cap">
+            <!-- used to generate the card image of the game to its corresponding module -->
+            @if(i >= 1 && i < 4) {
+              <img class="card-img-top" src="/img/morning.png" alt="Card image cap">
+            } else if (i >= 4 && i < 7) {
+              <img class="card-img-top" src="/img/evening.png" alt="Card image cap">
+            } else {
+              <img class="card-img-top" src="/img/night.png" alt="Card image cap">
+            }
             <div style="background:white;" class="card-body">
               <b><h5 class="card-title">Module @(i)</h5></b>
               <p class="card-text">Corresponding module description.</p>

@@ -45,7 +45,7 @@
   -->
 
 
-<div class="cover1">
+<div style="visibility: hidden;" class="cover1">
   <div id="landingHeader">
     <img id="headerLogo" src=../../img/rock.png>
     <span id="headerTitle">Sight Words Rock</span>
@@ -59,8 +59,7 @@
   </div>
 
   <div style="margin: 20px" class="row">
-    <div class="col-md-4 text-center">
-      <img src="https://via.placeholder.com/300x300" alt="Card image cap">
+    <div id="gameImage" class="col-md-4 text-center">
     </div>
     <div class="col-md-4 text-center">
       <h3>Module @Model.moduleNumber</h3>
@@ -87,3 +86,24 @@
   </div>
 
 </div>
+
+
+<script>
+var url = $(location).attr('href');
+var indexGame = url.charAt(url.length -1);
+
+const cover = document.querySelector(".cover1 ");
+
+// sets stage image
+window.onload = function setBackground(){
+  if (indexGame >= 1 && indexGame < 4) {
+    document.getElementById("gameImage").innerHTML = "<img class=\"card-img-top\" src=\"/img/morning.png\" alt=\"Card image cap\">"
+  } else if (indexGame >= 4 && indexGame < 7){
+    document.getElementById("gameImage").innerHTML = "<img class=\"card-img-top\" src=\"/img/evening.png\" alt=\"Card image cap\">"
+  } else {
+    document.getElementById("gameImage").innerHTML = "<img class=\"card-img-top\" src=\"/img/night.png\" alt=\"Card image cap\">"
+  }
+  // to eliminate flash of unstyled content
+  cover.style.visibility='visible';
+}
+</script>
