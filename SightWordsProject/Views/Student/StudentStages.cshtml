@@ -63,13 +63,16 @@
     </div>
     <div class="col-md-4 text-center">
       <h3>Module @Model.moduleNumber</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a asp-area="" asp-controller="Student" asp-action="StudentDashboard" class="btn btn-info btn-lg">Go back</a>
+      <p>Welcome to Module @Model.moduleNumber! </p>
+      <p>To play, listen to the rock say a word.
+      Find the word and drag it to the basket.
+      If you choose the right word, you will get a point.</p>
+      <p>To begin playing, press the Play button.</p>
+      <a asp-area="" asp-controller="Student" asp-action="StudentDashboard" class="btn btn-info btn-sm">Go back</a>
     </div>
     <div class="col-md-4 text-center">
-      <h3>Select a Stage</h3>
+      <h3>Play here!</h3>
+      <!--
       <div class="list-group" id="list-tab" role="tablist">
         @for(int i = 0; i < 4; i++) {
           <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" data-toggle="list" role="tab">
@@ -79,8 +82,10 @@
           </a>
         }
       </div>
-      <a style="margin-top:20px" role="button" asp-area="" asp-controller="Student" asp-action="Stage1" asp-route-id="@Model.moduleNumber"class="btn btn-info btn-lg">
-        Play
+      -->
+      
+      <a style="margin-top:20px; border-radius:2.3rem; padding: 1.5rem 4rem; font-size:5.25rem;" role="button" asp-area="" asp-controller="Student" asp-action="Stage1" asp-route-id="@Model.moduleNumber"class="btn btn-primary btn-lg">
+        <i class="fas fa-play"></i>
       </a> 
     </div>
   </div>
