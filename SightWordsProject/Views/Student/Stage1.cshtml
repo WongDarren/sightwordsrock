@@ -303,7 +303,7 @@ expanding css
 </style>
 <div style="visibility: hidden;" class="showcase">
   <div class="header-project">
-    <img style=" -webkit-user-drag:none;"class="speaker" src="/img/rockHappy.png" onclick=window.speechSynthesis.speak(msg2)>
+    <img style=" -webkit-user-drag:none;"class="speaker" id="speaker" tfc  src="/img/rockHappy.png" onclick=window.speechSynthesis.speak(msg2)>
     
 
   </div>
@@ -560,11 +560,13 @@ drop.addEventListener("mouseout", () => {
 });
 
 function score_f(){
+  rockMoveWin();
   score = score + 1;
   document.getElementById("myScore").innerHTML = "My Score: " + score;
 }
 
 function incorrect_f(){
+  rockMoveLose();
   incorrect++;
   document.getElementById("myIncorrect").innerHTML = "Incorrect: " + incorrect;
 }
@@ -676,4 +678,34 @@ window.onclick = function(event) {
   }
 }
 */
+// rock animation win
+function rockMoveWin() {
+  var elem = document.getElementById("speaker");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 360) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.transform = `rotate(${pos}deg)`;
+    }
+  }
+}
+// rock animation lose
+function rockMoveLose() {
+  var elem = document.getElementById("speaker");   
+  var pos = 0;
+  var id = setInterval(frameRight, 2);
+  pos = 0;
+  function frameRight() {
+    if (pos == 30) {
+      clearInterval(id);
+    } 
+    else {
+      pos++; 
+      elem.style.transform = `rotate(${-pos}deg)`;
+    }
+  }
+}
 </script>
