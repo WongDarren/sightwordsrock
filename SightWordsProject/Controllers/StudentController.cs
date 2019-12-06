@@ -103,10 +103,6 @@ namespace SightWordsProject.Controllers
             }
             return View(model);
         }
-        public IActionResult StageGame2()
-        {
-            return View("Views/Student/Game/Stage2.cshtml");
-        }
         [HttpGet]
         public IActionResult CreateAccount()
         {
