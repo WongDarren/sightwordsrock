@@ -1,7 +1,6 @@
 # sightwordsrock
 
-Introduction
-
+##Introduction##
 Sight Words Rock is a web application 
 where students can play games to learn
 non-phonetic words - words that are
@@ -11,8 +10,7 @@ The goal of our project is for children to
 be able to recognize sight words without 
 having to decode them.
 
-Research
-
+##Research##
 It is proven in a study by Jaclyn Dynia that young
 children on average have low efficiency
 recognizing sight words quickly.
@@ -29,23 +27,26 @@ and 69 and below is Very Poor. 90 second and
 third grade students scored an overall average of 
 62.18.
 
-App Features
-
+##App Features##
 Student and Teacher Log In
 Students and teachers can create an account
 and log in to our application.
 
-Student Dashboard
+##Student Dashboard##
 Students will have a dashboard where they can 
 begin playing the game.
 
-Teacher Dashboard
+##Teacher Dashboard##
 Teachers will have a dashboard where they can
 manage account settings, view student progress,
 and edit class settings.
 
-The Game
+##The Game##
 The game is for students to play. Our mascot will 
 say a word, then the student will have to choose
 the corresponding word and drag it to the basket
 in order to score a point.
+
+Date: September 2019 - December 2019<br>
+UNLV Computer Science Senior Design Project<br>
+Category: ASP.NET Core
